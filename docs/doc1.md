@@ -1,24 +1,24 @@
 ---
 id: doc1
-title: Style Guide
-sidebar_label: Style Guide
+title: Installation
+sidebar_label: Installation
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+To install the alphabet-SCSS you need to have the SASS installed and clone the alphabet-SCSS library from [Github](https://github.com/fwrlines/alphabet-scss-docs).
 
-## Markdown Syntax
+## Intall SASS:
 
-To serve as an example page when styling markdown based Docusaurus sites.
+If you don't know how to install SASS then we suggest you read how to do it from [SASS-lang.com/install](https://sass-lang.com/install) 
 
-## Headers
+## Clone the repository
 
-# H1 - Create the best documentation
+#### First step
 
-## H2 - Create the best documentation
+#### Second step
 
-### H3 - Create the best documentation
+#### Third step
 
-#### H4 - Create the best documentation
+#### Fourth step
 
 ##### H5 - Create the best documentation
 
@@ -26,15 +26,11 @@ To serve as an example page when styling markdown based Docusaurus sites.
 
 ---
 
-## Emphasis
+## First step is to clone the repository into you computer
 
-Emphasis, aka italics, with _asterisks_ or _underscores_.
+Use this command:
 
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
+	_git clone https://github.com/fwrlines/alphabet-scss_
 
 ---
 
