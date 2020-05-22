@@ -31,10 +31,13 @@ const features = [
     description: (
       <>
 	      1) Install SASS
+	      <br />
 	      2) clone Alphabet-SCSS
+	      <br />
 	      3) SASS the main.scss to main.css
+	      <br />
 	      4) enjoy the Alphabet-SCSS library
-	      5)test git remote
+	      <br />
       </>
     ),
   },
@@ -49,7 +52,7 @@ function Feature({imageUrl, title, description}) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <h3 className="text--center">{title}</h3>
       <p>{description}</p>
     </div>
   );
