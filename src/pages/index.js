@@ -17,22 +17,20 @@ const features = [
     ),
   },
   {
-    title: <>Focus on What Matters</>,
+    title: <>The main advantage of Alphabet-SCSS</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+	      The most important thing you need to know about Alphabet-SCSS is that it uses the getter/setter mutation design pattern. if you are already familiar with the concept then you are good to go.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
+    title: <>-- empty --</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+	      One more thing to say here
       </>
     ),
   },
