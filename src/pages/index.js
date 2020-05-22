@@ -34,6 +34,7 @@ const features = [
 	      2) clone Alphabet-SCSS
 	      3) SASS the main.scss to main.css
 	      4) enjoy the Alphabet-SCSS library
+	      5)test git remote
       </>
     ),
   },
