@@ -8,12 +8,11 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>hard to understand</>,
+    title: <>Easy to understand</>,
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+	      Alphabet-SCSS is a CSS library which is a combination of SASS and CSS4 and helps you to design your UI easier and a lot faster with very little effort
       </>
     ),
   },
