@@ -6,7 +6,7 @@ sidebar_label: Installation
 
 To install the alphabet-SCSS you need to have the SASS installed and clone the alphabet-SCSS library from [Github](https://github.com/fwrlines/alphabet-scss-docs).
 
-## Intall SASS:
+## Install SASS:
 
 If you don't know how to install SASS then we suggest you read how to do it from [SASS-lang.com/install](https://sass-lang.com/install) 
 
@@ -30,7 +30,7 @@ If you don't know how to install SASS then we suggest you read how to do it from
 
 Use this command:
 
-	_git clone https://github.com/fwrlines/alphabet-scss_
+	git clone https://github.com/fwrlines/alphabet-scss
 
 ---
 
