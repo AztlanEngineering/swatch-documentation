@@ -26,11 +26,14 @@ const features = [
     ),
   },
   {
-    title: <>-- empty --</>,
+    title: <>Installation</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-	      One more thing to say here
+	      1) Install SASS
+	      2) clone Alphabet-SCSS
+	      3) SASS the main.scss to main.css
+	      4) enjoy the Alphabet-SCSS library
       </>
     ),
   },
