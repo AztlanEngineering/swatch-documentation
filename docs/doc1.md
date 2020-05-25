@@ -1,5 +1,5 @@
 ---
-id: Installation
+id: Installation 
 title: Installation
 sidebar_label: Installation
 ---
@@ -14,7 +14,7 @@ If you don't know how to install SASS then we suggest you read how to do it from
 
 To clone the repository into your computer use the command below:
 
-	``` $git clone https://github.com/fwrlines/alphabet-scss ```
+	$git clone https://github.com/fwrlines/alphabet-scss
 
 
 ---
@@ -23,7 +23,7 @@ To clone the repository into your computer use the command below:
 
 You should enter the directory you just cloned
 
-	``` $cd alphabet-scss/ ```
+	$cd alphabet-scss/
 
 ---
 
@@ -31,7 +31,7 @@ You should enter the directory you just cloned
 
 Do it by run this command in the `alphabet-scss/`:
 
-	``` $npm install ```
+	$npm install
 
 ---
 
@@ -39,7 +39,7 @@ Do it by run this command in the `alphabet-scss/`:
 
 Use this command to create the CSS stylesheet file:
 
-	``` $sass main.scss main.css ```
+	$sass main.scss main.css
 
 ---
 
@@ -47,7 +47,7 @@ Use this command to create the CSS stylesheet file:
 
 Now that you have created your css file. you can copy it to your project and link it to your HTML file to use it like this:
 
-	```<link href='main.css' rel-'stylesheet' type='text/css' />```
+	<link href='main.css' rel-'stylesheet' type='text/css' />
 
 ---
 
