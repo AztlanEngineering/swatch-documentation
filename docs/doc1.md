@@ -53,6 +53,6 @@ Now that you have created your css file. you can copy it to your project and lin
 
 ### congratulations
 
-You have done it all. Enjoy the alphabet-SCSS library in your design.
+You have done it all. Enjoy the alphabet-SCSS library.
 
-And of you needed any help to use it we suggest you read the [tutorials]().
+And if you needed any help how to use it we suggest you read the [tutorials]().
