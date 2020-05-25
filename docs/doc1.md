@@ -1,5 +1,5 @@
 ---
-id: Installation 
+id: doc1 
 title: Installation
 sidebar_label: Installation
 ---
