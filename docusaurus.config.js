@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'fwrlines', // Usually your GitHub org/user name.
   projectName: 'alphabet-scss', // Usually your repo name.
+  themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     navbar: {
       title: 'Alphabet SCSS',
