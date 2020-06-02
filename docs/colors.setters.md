@@ -3,12 +3,38 @@ id: colors.setters
 title: Setters
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+### What is a setter?
 
-Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.
+If you are interested to have a deeper knowledge about setters/getters or in other words mutation pattern we recommend this [article](https://en.wikipedia.org/wiki/Mutator_method). Setters are variables that can be set to a value which you can then use anywhere in your code that you need that value. 
+ 
+---
 
-Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.
+### How setters are used in Alphabet-SCSS?
 
-Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.
+In Alphabet-SCSS library we set values for variables using CSS4 so they can be used in every element that we see fit for that color but how is that different from writing our own CSS then?
 
-Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.
+Here is the fun part. You can write the Setters or variables in your parent class and after that all you need to do is to call them via [getters](./colors.getters) in every child element you need them.
+
+We have three differenet Setters defined in Alphabet-SCSS and each of them has five Getter. Don't worry it's not that complicated. We will go over them in [Getters](colors.getters) page.
+
+lets see an example:
+
+```jsx live
+<div>
+	<div class='x-red'></div>
+	<div class='y-green'></div>
+	<div class='z-blue'></div>
+</div>
+``` 
+
+Now in the above example there is three color classes but each with different prefixes why is that? 
+
+The reason is if we needed more that one color in our code block we can be able to call the Setters for it. 
+
+But why do we need three, isn't two enough? It's always better to have extra classes and not need them than not have them and need them. 
+
+---
+
+### how Setters work
+
+We will give the parent element the Setters we need as a class name and inheritance quality of CSS4 variables will pass them to the children of that element. so we have the Setters of colors 'red' and 'green' and 'blue'. Now using Getters we can call them on every child element that needs them.
