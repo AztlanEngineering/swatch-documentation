@@ -3,14 +3,10 @@ id: colors.examples
 title: Usage
 ---
 
-### Lets see some
----
-id: colors.examples
-title: Usage
----
 
 We write most of the examples with **x** variable but you need to know that all the examples work with **y** and **z** variables as well.
 You can test them yourself.
+
 ---
 
 ### background color
