@@ -23,8 +23,10 @@ If we want to use the Setter as a background color we should name the class of t
 
 lets see an example:
 ```jsx live
-<div class='x-red'>
-	<div class='b-x'></div>
+<div class='x-red y-olive z-blue'>
+	<div class='b-x'>Alphabet-SCSS</div>
+	<div class='b-y'>Alphabet-SCSS</div>
+	<div class='b-z'>Alphabet-SCSS</div>
 </div>
 ```
 
@@ -35,8 +37,10 @@ lets see an example:
 If we want to use the Setter as a foreground color we should name the class of the target element `c-x` (**c** for the `color` property and **x** to tell the CSS that, this Getter is looking for the value of the **x** Setter that we gave the parent element earlier in the last article).
 
 ```jsx live
-<div class='x-red'>
-	<div class='c-x'></div>
+<div class='x-red y-blue z-green'>
+	<div class='c-x'>Alphabet-SCSS</div>
+	<div class='c-y'>Alphabet-SCSS</div>
+	<div class='c-z'>Alphabet-SCSS</div>
 </div>
 ```
 ---
@@ -50,8 +54,10 @@ we have a variable that helps you choose what foreground color have the best con
 You just need to set your background color and then add this variable as a class name to your element beside the background color Getter. lets see it:
 
 ```jsx live
-<div class='y-green'>
-	<div class='b-y c-on-y'></div>
+<div class='x-yellow y-green z-white'>
+	<div class='b-x c-on-x'>Alphabet-SCSS</div>
+	<div class='b-y c-on-y'>Alphabet-SCSS</div>
+	<div class='b-z c-on-z'>Alphabet-SCSS</div>
 </div>
 ```
 
@@ -63,7 +69,8 @@ This Getter will set the color you have on the Setter variable as the parent cla
 
 ```jsx live
 <div class='y-green'>
-	<div class='b-light-y'></div>
-	<div class='b-dark-y'></div>
+	<div class='b-light-y'>Alphabet-SCSS</div>
+	<div class='b-y'>Alphabet-SCSS</div>
+	<div class='b-dark-y'>Alphabet-SCSS</div>
 </div>
 ``` 

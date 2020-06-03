@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
-    Introduction: ['doc2'],
-    Installation: ['doc1'],
+    Introduction: ['introduction'],
+    Installation: ['installation'],
     Reset: ['reset'],
     Colors: [
       'colors.setters', 

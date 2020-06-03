@@ -3,35 +3,54 @@ id: colors.examples
 title: Usage
 ---
 
+### Lets see some
+---
+id: colors.examples
+title: Usage
+---
+
+We write most of the examples with **x** variable but you need to know that all the examples work with **y** and **z** variables as well.
+You can test them yourself.
+---
+
+### background color
+
 ```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    var timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
+<div class='x-yellow'>
+	<h2 class='b-dark-x'>Alphabet-SCSS</h2>
+	<h2 class='b-x'>Alphabet-SCSS</h2>
+	<h2 class='b-light-x'>Alphabet-SCSS</h2>
+</div>
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+---
 
-Duis et egestas libero, imperdiet faucibus ipsum. Sed posuere eget urna vel feugiat. Vivamus a arcu sagittis, fermentum urna dapibus, congue lectus. Fusce vulputate porttitor nisl, ac cursus elit volutpat vitae. Nullam vitae ipsum egestas, convallis quam non, porta nibh. Morbi gravida erat nec neque bibendum, eu pellentesque velit posuere. Fusce aliquam erat eu massa eleifend tristique.
+### Foreground color
 
-Sed consequat sollicitudin ipsum eget tempus. Integer a aliquet velit. In justo nibh, pellentesque non suscipit eget, gravida vel lacus. Donec odio ante, malesuada in massa quis, pharetra tristique ligula. Donec eros est, tristique eget finibus quis, semper non nisl. Vivamus et elit nec enim ornare placerat. Sed posuere odio a elit cursus sagittis.
+There is three shades of each color to use where ever you need same as background color:
 
-Phasellus feugiat purus eu tortor ultrices finibus. Ut libero nibh, lobortis et libero nec, dapibus posuere eros. Sed sagittis euismod justo at consectetur. Nulla finibus libero placerat, cursus sapien at, eleifend ligula. Vivamus elit nisl, hendrerit ac nibh eu, ultrices tempus dui. Nam tellus neque, commodo non rhoncus eu, gravida in risus. Nullam id iaculis tortor.
 
-Nullam at odio in sem varius tempor sit amet vel lorem. Etiam eu hendrerit nisl. Fusce nibh mauris, vulputate sit amet ex vitae, congue rhoncus nisl. Sed eget tellus purus. Nullam tempus commodo erat ut tristique. Cras accumsan massa sit amet justo consequat eleifend. Integer scelerisque vitae tellus id consectetur.
+```jsx live
+<div class='x-red'>
+	<h2 class='c-dark-x'>Alphabet-SCSS</h2>
+	<h2 class='c-x'>Alphabet-SCSS</h2>
+	<h2 class='c-light-x'>Alphabet-SCSS</h2>
+</div>
+```
+
+---
+
+### On color
+
+With this property we can select the foreground color of our text over the background we choose without testing which color fits it because the Alphabet-SCSS will choose the best color for us.
+
+
+```jsx live
+<div class='x-green y-white z-red'>
+	<h2 class='b-x c-on-x'>Alphabet-SCSS</h2>
+	<h2 class='b-y c-on-y'>Alphabet-SCSS</h2>
+	<h2 class='b-z c-on-z'>Alphabet-SCSS</h2>
+</div>
+```
+
+---
