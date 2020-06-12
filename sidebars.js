@@ -10,6 +10,6 @@ module.exports = {
       'colors.advanced.variables'
   ],
     Sizes: ['mdx'],
-    APIReference:['mdx']
+    APIReference:['apireference']
   },
 };
