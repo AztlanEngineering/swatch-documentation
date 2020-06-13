@@ -23,7 +23,7 @@ To clone the repository into your computer use the command below:
 
 You should enter the directory you just cloned
 
-	$cd alphabet-scss/
+	$cd swatch/
 
 ---
 

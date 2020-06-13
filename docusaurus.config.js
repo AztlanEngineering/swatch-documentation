@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'Alphabet SCSS',
+  title: 'Color Swatch',
   tagline: 'A powerful, lightweight scss library based on css4 vars and the mutator pattern.',
-  url: 'https://alphabet-scss.fwrlines.com',
+  url: 'https://vercel.com/fwrlines/swatch-docs',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'fwrlines', // Usually your GitHub org/user name.
-  projectName: 'alphabet-scss', // Usually your repo name.
+  projectName: 'Color Swatch', // Usually your repo name.
   themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     navbar: {
-      title: 'Alphabet SCSS',
+      title: 'Color Swatch',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.png',
@@ -23,7 +23,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/fwrlines/alphabet-scss',
+          href: 'https://github.com/fwrlines/swatch',
           label: 'GitHub',
           position: 'right',
         },

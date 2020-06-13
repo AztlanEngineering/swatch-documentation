@@ -12,32 +12,25 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-	      Alphabet-SCSS is a CSS library which is a combination of SASS and CSS4 and helps you to design your UI easier and a lot faster with very little effort
+	      Color-swatch is a CSS library which is a combination of SASS and CSS4 and helps you to design your UI easier and a lot faster with very little effort
       </>
     ),
   },
   {
-    title: <>The main advantage of Alphabet-SCSS</>,
+    title: <>The main advantage of Color-swatch</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-	      The most important thing you need to know about Alphabet-SCSS is that it uses the getter/setter mutation design pattern. if you are already familiar with the concept then you are good to go.
+	      The most important thing you need to know about Color-swatch is that it uses the getter/setter mutation design pattern. if you don't know the mutator pattern don't worry we will cover it.
       </>
     ),
   },
   {
-    title: <>Installation</>,
+    title: <>Easy to install</>,
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-	      1) Install SASS
-	      <br />
-	      2) clone Alphabet-SCSS
-	      <br />
-	      3) SASS the main.scss to main.css
-	      <br />
-	      4) enjoy the Alphabet-SCSS library
-	      <br />
+	      There is a small 4 step installation instruction to doand then you have the Color-swatch ready for use.
       </>
     ),
   },
