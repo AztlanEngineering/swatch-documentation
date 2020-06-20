@@ -9,24 +9,22 @@ If you are interested to have a deeper knowledge about setters/getters or in oth
 
 ---
 
-### How Getters are used in Alphabet-SCSS?
+### How Getters are used in Swatch?
 
-in Alphabet-SCSS library we have Setters and they get some values. But how do we use them? 
-
-This is what Getters are for. Every where in our code that we need the value of a specific Setter we can have it by writing the Getter related to that Setter. We mentioned in the [Setter](colors.setters) that every Setter has five Getters. Here we are going to explaine them.
+In [Setters](colors.setters) we explained how we can add Setters to our code, now it's time to learn how we should call Setters in our code using Getters. Every where in our code that we need the value of a specific Setter we can have it by calling it's Getter. We mentioned in the [Setter](colors.setters) that every Setter has five Getters lets see them by examples:
 
 ---
 
 ### As background color
 
-If we want to use the Setter as a background color we should name the class of the target element `b-x` (**b** for `background-color` property and **x** to tell the CSS that, this Getter is looking for the value of the **x** Setter that we gave the parent element earlier in the last article).
+If we want to use the Setter as a background color we should name the class of the target element `b-x` (**b** for `background-color` property and **x** to tell the CSS that, this Getter is looking for the value of the **x** Setter that we gave the parent element earlier).
 
 lets see an example:
 ```jsx live
-<div class='x-red y-olive z-blue'>
-	<div class='b-x'>Alphabet-SCSS</div>
-	<div class='b-y'>Alphabet-SCSS</div>
-	<div class='b-z'>Alphabet-SCSS</div>
+<div class='x-red y-olive z-blue'><h3>Swatch library</h3>
+	<div class='b-x'>Here we are calling the x-setter for bg-color</div>
+	<div class='b-y'>Here we are calling the y-setter for bg-color</div>
+	<div class='b-z'>Here we are calling the z-setter for bg-color</div>
 </div>
 ```
 
@@ -34,13 +32,13 @@ lets see an example:
 
 ### As foreground color
 
-If we want to use the Setter as a foreground color we should name the class of the target element `c-x` (**c** for the `color` property and **x** to tell the CSS that, this Getter is looking for the value of the **x** Setter that we gave the parent element earlier in the last article).
+If we want to use the Setter as a foreground color we should name the class of the target element `c-x` (**c** for the `color` property and **x** to tell the CSS that, this Getter is looking for the value of the **x** Setter that we gave the parent element earlier).
 
 ```jsx live
-<div class='x-red y-blue z-green'>
-	<div class='c-x'>Alphabet-SCSS</div>
-	<div class='c-y'>Alphabet-SCSS</div>
-	<div class='c-z'>Alphabet-SCSS</div>
+<div class='x-red y-blue z-green'><h3>Swatch library</h3>
+	<div class='c-x'>Here we are calling the x-setter for color</div>
+	<div class='c-y'>Here we are calling the y-setter for color</div>
+	<div class='c-z'>Here we are calling the z-setter for color</div>
 </div>
 ```
 ---
@@ -49,15 +47,16 @@ If we want to use the Setter as a foreground color we should name the class of t
 
 What does on color mean?
 
-we have a variable that helps you choose what foreground color have the best contrast and works better on your background without even thinking about it. It's called the on-color variable. 
+We defined a variable that helps choose what foreground color have the best contrast and works better on your background so you don't have to try and test it out for each color you choose. It's called the on-color variable. 
 
-You just need to set your background color and then add this variable as a class name to your element beside the background color Getter. lets see it:
+You just need to set your background color and then add this Getter/Variable as a class name to your element beside the background color Getter.
 
+Example:
 ```jsx live
-<div class='x-yellow y-green z-white'>
-	<div class='b-x c-on-x'>Alphabet-SCSS</div>
-	<div class='b-y c-on-y'>Alphabet-SCSS</div>
-	<div class='b-z c-on-z'>Alphabet-SCSS</div>
+<div class='x-red y-white z-black'><h3>Swatch library</h3>
+	<div class='b-x c-on-x'>on-color Getter example for different bg-color</div>
+	<div class='b-y c-on-y'>on-color Getter example for different bg-color</div>
+	<div class='b-z c-on-z'>on-color Getter example for different bg-color</div>
 </div>
 ```
 
@@ -65,12 +64,23 @@ You just need to set your background color and then add this variable as a class
 
 ### Light/dark color
 
-This Getter will set the color you have on the Setter variable as the parent class name for the child element but as a lighter or darker shade which is really helpful specially when you are trying to have a light/dark shade of the same color in corners or footer and header, etc.
+With this Getter we can have different shades of the same color we have for our lighter or darker parts of the design we need like the top menu or footer or even on hover or any other place that we need a shade of the same color we are using in our design.
 
+Examples:
 ```jsx live
-<div class='y-green'>
-	<div class='b-light-y'>Alphabet-SCSS</div>
-	<div class='b-y'>Alphabet-SCSS</div>
-	<div class='b-dark-y'>Alphabet-SCSS</div>
+<div class='x-blue y-yellow z-green'><h3>Swatch library</h3>
+	<div class='b-light-x'>This is the light shade of color</div>
+	<div class='b-x'>This is the main color</div>
+	<div class='b-dark-x c-on-x'>This is the dark shade of color</div>
+	<br />
+	<div class='b-light-y'>This is the light shade of color</div>
+	<div class='b-y'>This is the main color</div>
+	<div class='b-dark-y'>This is the dark shade of color</div>
+	<br />
+	<div class='b-light-z'>This is the light shade of color</div>
+	<div class='b-z'>This is the main color</div>
+	<div class='b-dark-z c-on-z'>This is the dark shade of color</div>
 </div>
-``` 
+```
+
+As you can see here we needed the on color property to change the contrast of our text on blue and green bg-color. 

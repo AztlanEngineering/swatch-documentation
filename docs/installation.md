@@ -4,55 +4,31 @@ title: Installation
 sidebar_label: Installation
 ---
 
-### 1.Install SASS
-
-First you need to install SASS.
-
-If you don't know how to install SASS then we suggest you read how to do it from [SASS-lang.com/install](https://sass-lang.com/install) 
-
-### 2.Clone the repository
-
-To clone the repository into your computer use the command below:
-
-	$git clone https://github.com/fwrlines/alphabet-scss
-
+## There are different ways to install Swatch
+### 1- Use the latest version of the library
+### 2- Add the Swatch color library into your own SCSS library
+#### a)Use the latest version of the library in your SCSS library
+#### b)Customize the library first then add it to your SCSS library
 
 ---
 
-### 3.Enter the directory
+### Use the latest version of Swatch in your project
 
-You should enter the directory you just cloned
+It's the simplest way to use the Swatch library. All you have to do is to add a `<link>` tag to your code and in it's `href` attribute give the URL of the latest version of the library:
 
-	$cd swatch/
+`<link href='https://demo.swatch.fwrlines.com/main.css' rel='stylesheet' type='text/css' />`
 
----
+--- 
 
-### 4.Install the SASS package
+### Add Swatch to your own SCSS library
 
-Do it by run this command in the `alphabet-scss/`:
+There are two way to add the Swatch library to your SCSS libray:
 
-	$npm install
+#### a) Add the library to your SCSS library
 
----
+If you wish to add the Swatch library to your SCSS library do as follow:
+`npm install @fwrlines/swatch` in your library and add the Swatch library to your final **SCSS** file which is going to be exported to create a **CSS** file by this line of code:
 
-### 5.Use SASS to create the CSS
+ `@import node_modules/@fwrlines/swatch/main`
 
-Use this command to create the CSS stylesheet file:
-
-	$sass main.scss main.css
-
----
-
-### 6.Link it to the HTML file
-
-Now that you have created your css file. you can copy it to your project and link it to your HTML file to use it like this:
-
-	<link href='main.css' rel-'stylesheet' type='text/css' />
-
----
-
-### congratulations
-
-You have done it all. Enjoy the alphabet-SCSS library.
-
-And if you needed any help how to use it we suggest you read the [tutorials]().
+#### b) Customize the Swatch library and add it to your library

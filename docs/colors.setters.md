@@ -9,13 +9,13 @@ If you are interested to have a deeper knowledge about setters/getters or in oth
  
 ---
 
-### How setters are used in Alphabet-SCSS?
+### How setters are used in Swatch?
 
-In Alphabet-SCSS library we set values for variables using CSS4 so they can be used in every element that we see fit for that color but how is that different from writing our own CSS then?
+In Swatch we set values for variables using CSS4 so they can be used in every element that we see fit for that color but how is that different from writing our own CSS then?
 
-Here is the fun part. You can write the Setters or variables in your parent class and after that all you need to do is to call them via [getters](./colors.getters) in every child element you need them.
+You can write the Setters/Variables in your parent class and after that all you need to do is to call them via [getters](./colors.getters) in every child element you need them.
 
-We have three differenet Setters defined in Alphabet-SCSS and each of them has five Getter. Don't worry it's not that complicated. We will go over them in [Getters](colors.getters) page.
+We have three different Setters defined in Swatch and each of them has five Getter. Don't worry it's not that complicated. We will go over them in [Getters](colors.getters) page.
 
 lets see an example:
 
@@ -37,4 +37,4 @@ But why do we need three, isn't two enough? It's always better to have extra cla
 
 ### how Setters work
 
-We will give the parent element the Setters we need as a class name and inheritance quality of CSS4 variables will pass them to the children of that element. so we have the Setters of colors 'red' and 'green' and 'blue'. Now using Getters we can call them on every child element that needs them.
+We will give the parent element the Setters we need as a class name and inheritance quality of CSS4 variables will pass them to the children of that element. So we have the Setters of colors 'red' and 'green' and 'blue' in our element. Now using Getters we can call them on every child element that needs them.
