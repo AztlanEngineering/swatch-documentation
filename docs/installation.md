@@ -26,9 +26,27 @@ There are two way to add the Swatch library to your SCSS libray:
 
 #### a) Add the library to your SCSS library
 
-If you wish to add the Swatch library to your SCSS library do as follow:
-`npm install @fwrlines/swatch` in your library and add the Swatch library to your final **SCSS** file which is going to be exported to create a **CSS** file by this line of code:
 
- `@import node_modules/@fwrlines/swatch/main`
+##### Via Dart SASS
+
+If you wish to add the Swatch library to your **SCSS** library do as follow:
+
+1- `npm install @fwrlines/swatch` in your library. 
+
+2- Add the Swatch library to your final **SCSS** file via `@use "@fwrlines/swatch/";`
+
+3- Now To compile your **SCSS** file to a **CSS** file use the `-I` flag in your command line followed by the `./node_modules` and then your **SCSS** & **CSS** file names like below:
+
+`sass -I ./node_modules your-library.scss final-stylesheet.css`
+
+##### Via Webpack
+
 
 #### b) Customize the Swatch library and add it to your library
+
+If you want to customize the library to your needs before adding it ro your own library, we gave you the option:
+
+After installing the Swatch with _npm_ and adding it to your **SCSS** library. Copy the template at `./custome.scss` and use it in your own **SCSS** file. Then modify the variables you want.
+Now your library is ready to be compiled to **CSS** file:
+
+`sass -I ./nodemodules your-library.scss final-stylesheet.css`
