@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'Color Swatch',
+  title: 'Swatch',
   tagline: 'A powerful, lightweight scss library based on css4 vars and the mutator pattern.',
   url: 'https://vercel.com/fwrlines/swatch-docs',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'fwrlines', // Usually your GitHub org/user name.
-  projectName: 'Color Swatch', // Usually your repo name.
+  projectName: 'Swatch', // Usually your repo name.
   themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     navbar: {
-      title: 'Color Swatch',
+      title: 'Swatch',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.png',
@@ -36,34 +36,21 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Introduction',
               to: 'docs/introduction',
             },
             {
-              label: 'Second Doc',
+              label: 'Installation',
               to: 'docs/installation',
             },
+	     {
+	       label: 'API References',
+	       to: 'docs/apireference',
+	    }
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
+          title: 'Links',
           items: [
             {
               label: 'Blog',
@@ -71,7 +58,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/fwrlines/swatch',
             },
           ],
         },

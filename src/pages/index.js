@@ -8,16 +8,16 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to understand</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Highly customizable</>,
+    imageUrl: 'img/customizable-logo.svg',
     description: (
       <>
-	      Color-swatch is a CSS library which is a combination of SASS and CSS4 and helps you to design your UI easier and a lot faster with very little effort
+	      Swatch is a highly customizable css color library and is a free and open source project created using Sass.
       </>
     ),
   },
   {
-    title: <>The main advantage of Color-swatch</>,
+    title: <>Great advantages</>,
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
