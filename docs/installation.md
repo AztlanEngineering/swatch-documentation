@@ -14,7 +14,7 @@ sidebar_label: Installation
 
 ### Use the latest version of Swatch in your project
 
-It's the simplest way to use the Swatch library. All you have to do is to add a `<link>` tag to your code and in it's `href` attribute give the URL of the latest version of the library:
+The easiest way to use Swatch library is to copy the `<link>` tag below to your HTML file.
 
 `<link href='https://demo.swatch.fwrlines.com/main.css' rel='stylesheet' type='text/css' />`
 
@@ -22,20 +22,20 @@ It's the simplest way to use the Swatch library. All you have to do is to add a 
 
 ### Add Swatch to your own SCSS library
 
-There are two way to add the Swatch library to your SCSS libray:
+There are two ways to add the Swatch library to your SCSS libray:
 
-#### a) Add the library to your SCSS library
+#### a) Add Swatch to your SCSS library
 
 
 ##### Via Dart SASS
 
-If you wish to add the Swatch library to your **SCSS** library do as follow:
+To add Swatch to your library:
 
 1- `npm install @fwrlines/swatch` in your library. 
 
 2- Add the Swatch library to your final **SCSS** file via `@use "@fwrlines/swatch/";`
 
-3- Now To compile your **SCSS** file to a **CSS** file use the `-I` flag in your command line followed by the `./node_modules` and then your **SCSS** & **CSS** file names like below:
+3- Compile your **SCSS** library to **CSS** stylesheet via `sass` command and use the `-I` flag in your command line followed by the `./node_modules` then write your **SCSS** & **CSS** file names:
 
 `sass -I ./node_modules your-library.scss final-stylesheet.css`
 
@@ -44,9 +44,10 @@ If you wish to add the Swatch library to your **SCSS** library do as follow:
 
 #### b) Customize the Swatch library and add it to your library
 
-If you want to customize the library to your needs before adding it ro your own library, we gave you the option:
+1- To customize the variables before adding Swatch to your library you need to go to `node_modules/@fwrlines/swatch/custom.scss` and copy the template to your final Scss file.
 
-After installing the Swatch with _npm_ and adding it to your **SCSS** library. Copy the template at `./custome.scss` and use it in your own **SCSS** file. Then modify the variables you want.
-Now your library is ready to be compiled to **CSS** file:
+2- Change the variables you need.
+
+3- Export your Scss file with the following command:
 
 `sass -I ./nodemodules your-library.scss final-stylesheet.css`

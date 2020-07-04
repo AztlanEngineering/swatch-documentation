@@ -24,3 +24,80 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+.container {
+	margin: 0 auto;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.header {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.header .menu {
+	margin: 20px 10px 0 10px;
+	padding: 10px 0;
+	height: 70px;
+}
+
+.header .menu ul li {
+	text-decoration: none;
+	text-align: left;
+	font-size: 17px;
+	display: inline-block;
+	padding: 3px 10px;
+	margin: 0 2px;
+}
+
+.main {
+	display: block;
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.footer {
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 0 auto;
+}
+
+.news {
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin: 0 5px;
+}
+
+.new {
+	width: 30%;
+	float: left;
+	border: 1px solid black;
+	margin: 5px 10px;
+}
+
+.new p {
+	text-align: justify;
+}
+
+.footer .docs ul li, .footer .other ul li {
+	text-decoration: none;
+	font-size: 16px;
+	display: inline-block;
+	width: 100%;
+}
+
+.footer .docs ul li:hover, .footer .other ul li:hover {
+	color: black;
+}
+
+.docs, .other {
+	display: inline-block;
+	width: 50%;
+}
+
+
