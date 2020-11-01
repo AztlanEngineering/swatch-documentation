@@ -1,13 +1,13 @@
 {
   "name": "@fwrlines/swatch-docs",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
     "start": "docusaurus start --host 0.0.0.0",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "prerelease:alpha":"npm version prerelease --preid=alpha"
+    "prerelease:alpha": "npm version prerelease --preid=alpha"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.66",
