@@ -83,9 +83,12 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          //customCss: require.resolve('https://unpkg.com/browse/@fwrlines/swatch@latest/main.scss',)
         },
       },
     ],
   ],
+  plugins: [
+    //'docusaurus-plugin-sass'
+   ]
 };
