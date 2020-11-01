@@ -1,18 +1,13 @@
 ---
-slug: getting-started-quick-install
-title: Quick Install (precompiled)
-sidebar_label: Quick Install
+slug: advanced-manual-compilation
+title: Manual Compilation
+sidebar_label: Manual Compilation
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-**This section applies to you if:**
-+ You want to have the library running quickly
-+ You are ok with using the library with the default variables and colors
-+ You want to test the library and see whether it suits you
-
-Next you will find the instructions to install the precompiled and minified version of Swatch. This version includes the complete set setters, getters, the default 10 colors and 2 themes (light and dark).
+In this section you will find the instructions to install the precompiled and minified version of Swatch. This version includes the complete set setters, getters, the default 10 colors and 2 themes (light and dark).
 
 ## Option 1 : One-minute install
 
@@ -23,14 +18,14 @@ Just put this line between the `<head>` and `</head>` tags of your html template
 <link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/main.min.css">
 ```
 
-## Option 2 : Bundle minified css from npm
+## Option 2 : Install minified css from npm
 
 If you wish to import this library as a module, you can install it from NPM using :
 ```bash
 npm i @fwrlines/swatch
 ```
 
-And then simply, in your javascript (provided `css` files are understood by your build system)
+And then simply, in your javascript
 
 
 <Tabs

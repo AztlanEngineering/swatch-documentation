@@ -89,7 +89,10 @@ module.exports = {
           editUrl        :'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme:{
-          customCss:require.resolve('@fwrlines/swatch/main.min.css')
+          customCss:[
+            require.resolve('@fwrlines/swatch/main.min.css'),
+            require.resolve('./src/css/custom.css')
+          ] 
         },
       },
     ],

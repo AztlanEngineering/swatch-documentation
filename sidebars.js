@@ -8,6 +8,7 @@ module.exports = {
     'Getting Started':[
       'getting-started.quick-install',
       'getting-started.webpack',
+      'getting-started.manual-compilation',
     ],
     "Guides":[
       'guides.setters-getters', 
