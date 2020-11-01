@@ -1,5 +1,5 @@
 ---
-id: introduction 
+slug: guides-themes-dark-theme
 title: Introduction
 ---
 
