@@ -2,6 +2,7 @@ module.exports = {
   main:{
     "swatch":[
       'swatch.introduction',
+      'swatch.design-principles',
       'swatch.contribution-feedback'
     ],
     'Getting Started':[
@@ -18,6 +19,11 @@ module.exports = {
           'guides.themes.local-themes',
         ]
       }
+    ],
+    "Advanced Guides":[
+      'advanced.custom-palette',
+      //'advanced.custom-themes',
+      //'advanced.scoped-theming'
     ],
     "APIReference":['apireference']
   },
