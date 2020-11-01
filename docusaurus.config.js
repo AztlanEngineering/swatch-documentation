@@ -21,7 +21,6 @@ module.exports = {
           label         :'Docs',
           position      :'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href    :'https://github.com/fwrlines/swatch',
           label   :'GitHub',
@@ -44,7 +43,7 @@ module.exports = {
               to   :'docs/installation',
             },
 	     {
-	       label:'API References',
+	       label:'API Reference',
 	       to   :'docs/apireference',
 	    }
           ],
@@ -53,17 +52,26 @@ module.exports = {
           title:'Links',
           items:[
             {
-              label:'Blog',
-              to   :'blog',
-            },
-            {
               label:'GitHub',
               href :'https://github.com/fwrlines/swatch',
             },
           ],
         },
+        {
+          title:'Contributers & feedback',
+          items:[
+            {
+              label:'Contributers',
+              href :'https://github.com/fwrlines/swatch/graphs/contributors',
+            },
+            {
+              label:'Issues',
+              href :'https://github.com/fwrlines/swatch/issues',
+            },
+          ],
+        },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By fwrlines Coding Group.`,
     },
   },
   presets:[

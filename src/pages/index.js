@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import styles from './styles.module.css'
+import GitHubButton from 'react-github-btn'
 
 const features = [
   {
@@ -77,6 +78,17 @@ function Home() {
             >
               Get Started
             </Link>
+            <div style={{ margin: '50px 60px' }}>
+              <GitHubButton
+                href="https://github.com/fwrlines/swatch"
+                data-color-scheme="no-preference: light; light: light; dark: light;"
+                data-show-count="true"
+                data-size="large"
+                aria-label="Star fwrlines/swatch on GitHub"
+              >
+Star
+              </GitHubButton>
+            </div>
           </div>
         </div>
       </header>
