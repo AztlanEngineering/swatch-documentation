@@ -55,3 +55,18 @@ require('@fwrlines/swatch/main.min.css')
   </TabItem>
 </Tabs>
 
+## Next steps
+
+Now you've installed the library, you can test it is successfully installed by writing in your html
+
+```html live
+<div class='y-green b-y'>I am text in a green box.</div>
+
+```
+
+This was your first glance at the actual workings of the library. 
+
+In the next step, you will learn the workings of the Swatch coloring library. You will get familiar with the _Swatch way of doing things_, an efficient new paradigm to manage theming and colors on your front-end projects ! 
+
+
+**Go the the Guides section, and [start learning](./guides-setters-getters) !**

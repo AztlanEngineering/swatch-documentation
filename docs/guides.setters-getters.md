@@ -1,6 +1,6 @@
 ---
 slug: guides-setters-getters
-title: Introduction
+title: Setters, Getters & Scope
 ---
 
 ### What is Swatch?
