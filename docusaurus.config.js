@@ -83,7 +83,7 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          //customCss: require.resolve('https://unpkg.com/browse/@fwrlines/swatch@latest/main.scss',)
+          customCss: require.resolve('@fwrlines/swatch/main.css')
         },
       },
     ],
