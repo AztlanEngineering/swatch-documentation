@@ -9,7 +9,7 @@ The selection of the right pattern will greatly depend on your coding style, whe
   + You use CSS modules or a separate CSS file for each component, CSS in JS, basically you write CSS separately from HTML
   + You prefer style properties (you write your CSS Inline)
 
-## Pattern 1 : Keeping HTML/JSX and CSS separate
+## Pattern 1 : Keeping CSS and HTML/JSX separate
 
 This way of doing coloring is for you if you write your CSS separately from your React component.
 
@@ -143,9 +143,8 @@ In the above playground, make the button background transparent, and get both th
 
 ## Example 2 : Inline Theming
 
-
+**Coming soon**
 
 ```SCSS title='title.css'
-hello
 
 ```
