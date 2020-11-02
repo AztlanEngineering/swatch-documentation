@@ -69,7 +69,9 @@ title: APIReference
 | `x-accent3` & `y-accent3` | Setter for the accent-3 color ( the third color to use for emphasising, contrasting a theme ) |
 | `xh-accent3` & `yh-accent3` | Setter for `:focus` & `:hover` on the accent-3 color |
 
-_Note: accent colors can be used all together or in pair or even none at all depending your design needs._
+:::note
+Accent colors can be used all together or in pair or even none at all depending your design needs.
+:::
 
 #### SM-colors
 
@@ -112,7 +114,9 @@ SM-colors are designed to use for the social network logos.
 | `ui-dark` | Setter for the parent element (i.e body) |
 | `ui-iceberg` | Setter for the parent element (i.e body) |
 
-Note: This setter is designed to be used on the parent element to change the color scheme of the document.
+:::note 
+This setter is designed to be used on the parent element to change the color scheme of the document.
+:::
 
 ### Getters 
 
@@ -120,23 +124,23 @@ Note: This setter is designed to be used on the parent element to change the col
 | :----  | :-------    |
 | `b-x` & `b-y` | Defines a background color of an element |
 | `c-x` & `c-y` | Defines a forground color of an element | 
-| `d-x` & `d-y` | Defines a border color of an element |
-| `e-x` & `e-y` | Fills inside of an element |
 | `b-light-x` & `b-light-y` | Defines the light shade of the  background color |
 | `c-light-x` & `c-light-y` | Defines the light shade of the forground color |
-| `e-light-x` & `e-light-y` | Fills the element with the light shade of the color |
 | `b-dark-x` & `b-dark-y` | deifnes the dark shade of the background color |
 | `c-dark-x` & `c-dark-y` | Defines the dark shade of the forground color |
-| `e-dark-x` & `e-dark-y` | Fills the element with the dark shade of th the color |
 | `b-on-x` & `b-on-y` | Defines the background color of the child element that has the color of the same setter |
 | `c-on-x` & `c-on-y` | Defines the forground color for it's background color |
-| `e-on-x` & `e-on-y` | Fills the child element of the parent element that has the color of the same setter |
 
+:::note 
+We currently have `b` & `c` as Getters for simplicity of the library for you but depends on the needs of our users we might add more getters in the future. If you think you need more getters please contact us and explain your situation. We will be happy to hear form you and also know your needs to find a solution for them. 
+:::
 ### Mixins of each part of the library
 
 If you rather to input one part of the Swatch to your own library.
 
-Note: It's recommended to use `@use` rule instead of `@import` rule for it's multiple advantages.
+:::info
+It's recommended to use `@use` rule instead of `@import` rule for it's multiple advantages.
+:::
 
 | irective      |     Description      |
 | :------------ |     :----------      |
