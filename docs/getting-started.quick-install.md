@@ -55,7 +55,7 @@ require('@fwrlines/swatch/main.min.css')
   </TabItem>
 </Tabs>
 
-## Next steps
+## Next step
 
 Now you've installed the library, you can test it is successfully installed by writing in your html
 

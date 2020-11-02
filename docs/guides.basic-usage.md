@@ -1,6 +1,6 @@
 ---
 slug: guides-basic-usage
-title: Introduction
+title: Basic Usage
 ---
 
 ### What is Swatch?

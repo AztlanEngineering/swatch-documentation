@@ -1,37 +1,151 @@
 ---
 slug: guides-react-components
-title: Introduction
+title: React components
 ---
 
-### What is Swatch?
+There are different ways you can use Swatch to theme your React components. If you are not using React, it is likely you can still use this guide to get inspired the different patterns available for you.
 
-Color Swatch is a great CSS color library which makes a great and beautiful UI. The newest toolkit in the front-end world. It contain SASS variables and CSS4 variables which makes it the most updated version of CSS libraries.
+The selection of the right pattern will greatly depend on your coding style, whether 
+  + You use CSS modules or a separate CSS file for each component, CSS in JS, basically you write CSS separately from HTML
+  + You prefer style properties (you write your CSS Inline)
 
----
+## Pattern 1 : Keeping HTML/JSX and CSS separate
 
-### Why should we use Swatch?
+This way of doing coloring is for you if you write your CSS separately from your React component.
 
-Color Swatch is created by SASS laguage and includes the CSS4 variables which makes it a lot more creative and a lot easier to use, also helps you to have a lot more possibilities in UI design. You can even have a customized Color library depending on your desire of colors you need in your design.
+### An example : making a colored button
 
----
 
-### What are the advantages?
+First, write the component (S)CSS. We recommend you do it in a separate file.
+```css title="/ColoredButton.styles.css"
+.colored_button{
+  /* We read the background from the `x` setter */
+  background:var(--x);
 
-#### First
-CSS4 variables and SASS variables each have different purposes which is quit specific to them and both are useful in their own special places so we decided to use both of them to make sure that we used them both to make this library as powerful as possible and also make it as customizable as possible for you.
+  /* We read the text color from the `x` setter. `on-x` has the value of a text color that contrasts legibly with `x` */
+  color:var(--on-x);
+  padding:1em;
+}
 
-#### Second
-It helps you write your code faster and easier with the same or better results in some cases because you can have the colors as getters in you parent class and just call them where ever you need them so you don't have to write the css code for them and call them in your HTML and not to mention to remember the name of the classes you used which is confusing specially on big projects.
+.colored_button:hover,
+.colored_button:focus {
+  /* On hover, we color the button a darker shade */
+  background:var(--dark-x);
+}
 
-#### Third
-As said earlier one of the great advantages that is absolutely lovable is that this is a special library that you can customize yourself for your own specific needs without needing to write a library or a big stylesheet from scratch yourself but the question is how?
+.colored_button:active {
+  /* On active (on click), we color the button a lighter shade */
+  background:var(--light-x);
+}
+```
 
-We will explain that in dept later but just to clearify here the only coding you need to do to customize the whole library to make it suitable for your need is to define a class with all the variables you need ( not all of them ) with new values that you like. Although for this you need to know the CSS4 variables and how to use them. But fear not, we will talk about that too.
+Now, write the React Component, in its own file as well.
+```jsx title="/ColoredButton.js"
+import * as React from 'react'
 
----
+import './ColoredButton.styles.css'
+// Or import './ColoredButton.styles.module.css'
+// Or import './ColoredButton.styles.scss' // if you use a preprocessor
+// Or <style>Copy the styles in a style block.</style> // (That's a bit ugly tough)
 
-### How do we use it?
+// Must match the class defined in the (S)CSS file
+const baseClassName = 'colored_button'
 
-Just like a normal CSS file we should link the extracted `main.css` file from the SASS to our HTML file and use it's classes in the class names. Easy right?
+const ColoredButton({
+  className, // Prop provided by the 'user'
+  ...props
+}) => (
+<button
+className={[
+  baseClassName, 
+  className //The user-provided class, which we'll read the getter from
+].join(' ')}
+>
+  This is a colored button
+</button>)
 
-Now click **_Next_** below to install the library and give it a try together.
+```
+
+Then, to apply a color, simply provide a setter in the `className` prop. Voila.
+```jsx
+<ColoredButton className='x-red'/>
+<ColoredButton className='x-white'/>
+<ColoredButton className='x-primary'/>
+<ColoredButton className='x-success'/>
+```
+
+### Now, try it yourself
+
+**You can find below a playground illustrating this pattern.**
+:::note
+Please note that the styles are included in the Playground only for you to practice. We repeat, in real world, we would include the styles in a separate file (as in the previous example), and we recommend you do the same.
+:::
+
+```jsx live
+function Playground() {
+
+  const baseClassName = 'colored_button'
+  
+  const ColoredButton = ({
+    id,
+    className,
+  }) => (
+    <button
+      id={ id }
+      className={[
+        baseClassName,
+        className
+      ].filter(e => e).join(' ')}
+    >
+      This button accepts color setters. 
+    </button>
+  )
+
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{__html:`
+         .colored_button{
+            background:var(--x);
+            color:var(--on-x);
+            padding:1em;
+          }
+          .colored_button:hover,
+          .colored_button:focus {
+            background:var(--dark-x);
+          }
+          .colored_button:active {
+            background:var(--light-x);
+          }
+        ` }}/>
+
+        <span>
+          The following button takes its background-color from the setter <code>x</code>.
+        <br/>The color on the inside text is <em>automatically</em> inferred from the background.
+        <br/> On hover, this button takes a darker shade of the color <code>x</code>
+        <br/> On active, this button takes a lighter shade of the color <code>x</code></span>
+
+      <ColoredButton className='x-warning'/>
+      <ColoredButton className='x-blue'/>
+      <ColoredButton className='x-white'/>
+
+    </>
+)}
+
+```
+:::info
+This is a very simple example of the power of Swatch. As you can see, in only 10 lines of CSS, we manage complex coloring, compatible with all colors. 
+
+Once you get more familiar with the Setter/Getter pattern, you will only be limited by your imagination.
+:::
+:::tip Try this !
+In the above playground, make the button background transparent, and get both the color and a 1px border-color from the `x` setter.
+:::
+
+## Example 2 : Inline Theming
+
+
+
+```SCSS title='title.css'
+hello
+
+```
