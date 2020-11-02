@@ -34,6 +34,7 @@ The Swatch CSS library is designed for **developers who have medium to advanced 
 + You have failed to find extensible, satisfactory solutions in the mainstream existing libraries.
 + You have a bit of experience in object-oriented programming so the _Swatch way of doing things_ will feel more natural to you.
 + You are interested in cutting-edge web design and you have already been looking at CSS4 variables as way to make your stylesheets more efficient.
++ You target code savings in CSS as a way to improve maintainability of stylesheets.
 
 :::note
 If you wish to customize Swatch, you need to know SCSS as well. You can find further information on how to do this in the section [Advanced > Custom Palette](./advanced-custom-palette).

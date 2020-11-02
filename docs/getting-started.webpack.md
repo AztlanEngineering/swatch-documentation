@@ -5,7 +5,7 @@ sidebar_label: Webpack Compilation
 ---
 
 **This section applies to you if:**
-+ **You are using webpack to bundle your application** (for instance, you are building a react app)
++ **You are using webpack to bundle your application** (for instance, you are building a React app)
 + **You want to compile yourself the source SCSS** of Swatch
 + ... and while doing so, **you wish to customize its variables**
 
@@ -78,3 +78,4 @@ with
 @use '@fwrlines/swatch/vars';
 ```
 
+ Then, customize Swatch following [this guide](./advanced-custom-palette).
