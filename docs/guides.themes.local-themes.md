@@ -12,12 +12,14 @@ In Swatch, a theme is an ensemble of CSS4 variables.
 There are two themes provided by default : `light` and `dark`.
 
 Both themes include the following CSS4 variables and their variants
+
 | Main variable | Light variant | Dark variant | Contrast color |
+| :-------- | :---------- | :----------- | :----------- | 
 | --background  | --light-background | --dark-background | --on-background |
-| --heading
-| --subtitle
-| --metadata
-| --description
+| --heading    | --light-heading | --dark-heading | --on-heading | 
+| --subtitle | --light-subtitle | --dark-subtitle | --on-subtitle |
+| --metadata | --light-metadata | --dark-metadata | --on-metadata |
+| --description | --light-description | --dark-description | --on-description |
 
 Themes can be manually triggered using the class api `ui-{themeName}`, that is to say `ui-light` and `ui-dark`. Said in another way : `.ui-{themeName}` sets ALL of the previous variables. 
 
