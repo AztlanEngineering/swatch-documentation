@@ -65,18 +65,13 @@ UI colors are meant to be used by the User Interface or your page or application
 
 ### Theme-colors
 
-| Setter | Description |
-| :----  | :-------    |
-| `x-primary` & `y-primary` | Setter for the primary color of the theme |
-| `xh-primary` & `yh-primary` | Setter for `:focus` & `:hover` on the primary color |
-| `x-secondary` & `y-secondary` | Setter for the secondary color of the theme |
-| `xh-secondary` & `yh-secondary` | Setter  for `:focus` & `:hover` on the secondary color |
-| `x-accent1` & `y-accent1` | Setter for the accent-1 color ( the color to emphasising, contrasting a theme ) |
-| `xh-accent1` & `yh-accent1` | Setter for `:focus` & `:hover` on the accent-1 color |
-| `x-accent2` & `y-accent2` | Setter for the accent-2 color ( the second color to use for emphasising, contrasting a theme ) |
-| `xh-accent2` & `yh-accent2` | Setter for `:focus` & `:hover` on the accent-2 color |
-| `x-accent3` & `y-accent3` | Setter for the accent-3 color ( the third color to use for emphasising, contrasting a theme ) |
-| `xh-accent3` & `yh-accent3` | Setter for `:focus` & `:hover` on the accent-3 color |
+| Main variable | Light variant | Dark variant | Contrast color | 
+| :-------- | :---------- | :----------- | :----------- | 
+| --primary <span className='y-primary b-y'>&#8193;</span> | --light-primary <span className='y-primary b-light-y'>&#8193;</span> | --dark-primary <span className='y-primary b-dark-y'>&#8193;</span> | --on-primary <span className='y-primary b-on-y'>&#8193;</span> | 
+| --secondary <span className='y-secondary b-y'>&#8193;</span> | --light-secondary <span className='y-secondary b-light-y'>&#8193;</span> | --dark-secondary <span className='y-secondary b-dark-y'>&#8193;</span> | --on-secondary <span className='y-secondary b-on-y'>&#8193;</span> | 
+| --accent1 <span className='y-accent1 b-y'>&#8193;</span> | --light-accent1 <span className='y-accent1 b-light-y'>&#8193;</span> | --dark-accent1 <span className='y-accent1 b-dark-y'>&#8193;</span> | --on-accent1 <span className='y-accent1 b-on-y'>&#8193;</span> | 
+| --accent2 <span className='y-accent2 b-y'>&#8193;</span> | --light-accent2 <span className='y-accent2 b-light-y'>&#8193;</span> | --dark-accent2 <span className='y-accent2 b-dark-y'>&#8193;</span> | --on-accent2 <span className='y-accent2 b-on-y'>&#8193;</span> | 
+| --accent3 <span className='y-accent3 b-y'>&#8193;</span> | --light-accent3 <span className='y-accent3 b-light-y'>&#8193;</span> | --dark-accent3 <span className='y-accent3 b-dark-y'>&#8193;</span> | --on-accent3 <span className='y-accent3 b-on-y'>&#8193;</span> | 
 
 :::note
 Accent colors can be used all together or in pair or even none at all depending your design needs.
@@ -96,16 +91,12 @@ This setter is designed to be used on the parent element to change the color sch
 
 ### Getters 
 
-| Getter | Decsription | 
-| :----  | :-------    |
-| `b-x` & `b-y` | Defines a background color of an element |
-| `c-x` & `c-y` | Defines a forground color of an element | 
-| `b-light-x` & `b-light-y` | Defines the light shade of the  background color |
-| `c-light-x` & `c-light-y` | Defines the light shade of the forground color |
-| `b-dark-x` & `b-dark-y` | deifnes the dark shade of the background color |
-| `c-dark-x` & `c-dark-y` | Defines the dark shade of the forground color |
-| `b-on-x` & `b-on-y` | Defines the background color of the child element that has the color of the same setter |
-| `c-on-x` & `c-on-y` | Defines the forground color for it's background color |
+| Main variable | Light variant | Dark variant | Contrast color | 
+| :-------- | :---------- | :----------- | :----------- | 
+| b-x <span className='x-green b-x'>&#8193;</span> | b-light-x <span className='x-green b-light-x'>&#8193;</span> | b-dark-x <span className='x-green b-dark-x'>&#8193;</span> | b-on-x <span className='x-green b-on-x'>&#8193;</span> | 
+| c-x <span className='x-blue c-x'>test</span> | c-light-x <span className='x-blue c-light-x'>test</span> | c-dark-x <span className='x-blue c-dark-x'>test</span> | c-on-x <span className='x-blue c-on-x'>test</span> | 
+| b-y <span className='y-red b-y'>&#8193;</span> | b-light-y <span className='y-red b-light-y'>&#8193;</span> | b-dark-y <span className='y-red b-dark-y'>&#8193;</span> | b-on-y <span className='y-red b-on-y'>&#8193;</span> | 
+| c-y <span className='y-azure c-y'>test</span> | c-light-y <span className='y-azure c-light-y'>test</span> | c-dark-y <span className='y-azure c-dark-y'>test</span> | c-on-y <span className='y-azure c-on-y'>test</span> | 
 
 :::note 
 We currently have `b` & `c` as Getters for simplicity of the library for you but depends on the needs of our users we might add more getters in the future. If you think you need more getters please contact us and explain your situation. We will be happy to hear form you and also know your needs to find a solution for them. 
