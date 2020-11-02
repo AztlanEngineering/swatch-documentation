@@ -42,10 +42,10 @@ module.exports = {
               label:'Quick Install',
               to   :'docs/getting-started-quick-install',
             },
-	     {
-	       label:'API Reference',
-	       to   :'docs/apireference',
-	    }
+	          {
+	             label:'API Reference',
+	             to   :'docs/apireference',
+	          }
           ],
         },
         {
@@ -58,11 +58,11 @@ module.exports = {
           ],
         },
         {
-          title:'Contributers & feedback',
+          title:'Contribution & feedback',
           items:[
-            {
-              label:'Contributers',
-              href :'https://github.com/fwrlines/swatch/graphs/contributors',
+	          {
+              label:'Contribution guide',
+	             to   :'docs/contribution-feedback',
             },
             {
               label:'Issues',
