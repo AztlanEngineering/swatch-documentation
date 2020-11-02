@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 Below, you will learn about the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, that we had when we came up with this solution for coloring and theming. 
 
-The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring, or global and scopes coloring. On the contrary, this section has a more abstract and theoretical focus.
+The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring or global theming. In contrast, this section has a more abstract and theoretical focus.
 
 We greatly invite you to read this section so that you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
 
