@@ -15,7 +15,7 @@ If you want to set up your custom vars somewhere else (for instance, in a react 
 `@use '@fwrlines/swatch/mixins';`    
 `@use '@fwrlines/swatch/vars';`
 
-Make sure, if you use the previous directives, to add `node_modules` to your sass path. See the [Installation doc](installation.md) for info. If you don't do this you will encounter a "module not found error".    
+Make sure, if you use the previous directives, to add `node_modules` to your sass path. See the  for info. If you don't do this you will encounter a "module not found error".    
 This is an example of how to use the library with your custom variables.
 
 In this version, all the variables are the default ones ...
