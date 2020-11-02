@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 
 ### Setters Class Name Syntax
 
-The colors _setters_ are CSS classes which have the syntax `x-{color}`, `y-{color}`, `xh-{color}`, `yh-{color}` where `color` must be replaced by a color name from one of the palettes, for instance :
+The colors _setters_ are CSS classes which have the syntax `x-{color}`, `y-{color}`, `xh-{color}`, `yh-{color}` where `color` must be replaced by a color name from one of the palettes, _for instance_ :
 + `red`, `green` (and others ...) for the wheel palette
 + `success`, `warning`, `error` for the modal palette
 + `twitter`, `facebook`(and others...) for the social media palette
@@ -21,13 +21,14 @@ The colors _setters_ are CSS classes which have the syntax `x-{color}`, `y-{colo
 For instance `x-background`, `y-red`, `xh-yellow`, `yh-twitter` are all valid color setters.
 
 :::note
+You can add, remove, rename colors by compiling your own version of Swatch from SCSS. [Instructions here](./advanced-custom-palette)
 :::
 
 ### Variables locally set
 
 All of the setters set 4 variables (normal, light, dark and contrast 'on color'), corresponding to the full color swatch of the selected nuance.
 
-| Setter CSS class | Variables Set | Note |
+| Setter CSS class |<div style={{ width:'17em' }}>Variables Set</div> | Note |
 | :------| :---------- | :------|
 | ` .x-{color}` | `--x:var(--{color})`<br/>`--light-x:var(--{color})`<br/>`--dark-x:var(--dark-{color})`<br/>`--on-x:var(--on-color)`| |
 | ` .y-{color}` | `--y:var(--{color})`<br/>`--light-y:var(--{color})`<br/>`--dark-y:var(--dark-{color})`<br/>`--on-y:var(--on-color)`| |
@@ -106,12 +107,12 @@ Swatch allows you  to do this out of the box.
 
 ### A simple example
 
-Lets say we want to create a getter that can, for a given color,
+Lets say we want to create a getter that can (for a given color),
 + Apply a 1px border to an element
 + Apply the same color to the text of the element
 + Have a transparent background
 
-If we want to call this getter d, simply have to write the following code
+If we want to call this getter `d`, simply have to write the following code
 
 <Tabs
   className="unique-tabs"
@@ -156,7 +157,7 @@ ETC
   <TabItem value="HTML">
 
 ```html
-<div class='d-x x-success'>A transparent div with a 'sucess' colored text and border</div>
+<div class='d-x x-success'>A transparent div with a 'success' colored text and border</div>
 <button class='d-y y-yellow'>A transparent button with a yellow text and border</button>
 <span class='d-x x-primary'>And this works on any HTML element</span>
 ```
@@ -204,4 +205,4 @@ Let's now code something more interactive. Lets make a button that
 </Tabs>
 
 
-In the next section, we will make a React component that follows the same pattern. 
+In the next section, we will make a React component that follows the same pattern. An interactive example will also be provided.

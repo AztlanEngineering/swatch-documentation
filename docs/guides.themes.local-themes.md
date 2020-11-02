@@ -3,7 +3,7 @@ slug: guides-themes-introduction
 title: A Primer on Swatch Themes
 ---
 
-You will find in this section an explanation of how themes relate to the Swatch coloring and theming library.
+Now, you know how to use setters and getters to apply colors to your html blocks or components. But how can we leverage the power of Swatch to apply themes at the application level ?
 
 ### How are themes represented in Swatch ?
 
@@ -11,15 +11,19 @@ In Swatch, a theme is an ensemble of CSS4 variables.
 
 There are two themes provided by default : `light` and `dark`.
 
-Both themes include the following CSS4 variables and their variants
+You have maybe already seen [here](./api-reference) the complete list of colors available in vanilla Swatch. Some of these colors are a bit _special_ in the sense that they can be _themed_.
 
-| Main variable | Light variant | Dark variant | Contrast color |
+Here is a table of all the _themable_ colors, as well as their `light` (L) and `dark` (D) default.
+
+| Main variable (L/D)| Light variant (L/D)| Dark variant (L/D)| Contrast color (L/D) 
 | :-------- | :---------- | :----------- | :----------- | 
-| --background  | --light-background | --dark-background | --on-background |
-| --heading    | --light-heading | --dark-heading | --on-heading | 
-| --subtitle | --light-subtitle | --dark-subtitle | --on-subtitle |
-| --metadata | --light-metadata | --dark-metadata | --on-metadata |
-| --description | --light-description | --dark-description | --on-description |
+| --background <span className='y-background b-y'>&#8193;</span><span className='ui-dark y-background b-y'>&#8193;</span> | --light-background <span className='y-background b-light-y'>&#8193;</span><span className='ui-dark y-background b-light-y'>&#8193;</span> | --dark-background <span className='y-background b-dark-y'>&#8193;</span><span className='ui-dark y-background b-dark-y'>&#8193;</span> | --on-background <span className='y-background b-on-y'>&#8193;</span><span className='ui-dark y-background b-on-y'>&#8193;</span> | 
+| --heading <span className='y-heading b-y'>&#8193;</span><span className='ui-dark y-heading b-y'>&#8193;</span> | --light-heading <span className='y-heading b-light-y'>&#8193;</span><span className='ui-dark y-heading b-light-y'>&#8193;</span> | --dark-heading <span className='y-heading b-dark-y'>&#8193;</span><span className='ui-dark y-heading b-dark-y'>&#8193;</span> | --on-heading <span className='y-heading b-on-y'>&#8193;</span><span className='ui-dark y-heading b-on-y'>&#8193;</span> | 
+| --subtitle <span className='y-subtitle b-y'>&#8193;</span><span className='ui-dark y-subtitle b-y'>&#8193;</span> | --light-subtitle <span className='y-subtitle b-light-y'>&#8193;</span><span className='ui-dark y-subtitle b-light-y'>&#8193;</span> | --dark-subtitle <span className='y-subtitle b-dark-y'>&#8193;</span><span className='ui-dark y-subtitle b-dark-y'>&#8193;</span> | --on-subtitle <span className='y-subtitle b-on-y'>&#8193;</span><span className='ui-dark y-subtitle b-on-y'>&#8193;</span> | 
+| --metadata <span className='y-metadata b-y'>&#8193;</span><span className='ui-dark y-metadata b-y'>&#8193;</span> | --light-metadata <span className='y-metadata b-light-y'>&#8193;</span><span className='ui-dark y-metadata b-light-y'>&#8193;</span> | --dark-metadata <span className='y-metadata b-dark-y'>&#8193;</span><span className='ui-dark y-metadata b-dark-y'>&#8193;</span> | --on-metadata <span className='y-metadata b-on-y'>&#8193;</span><span className='ui-dark y-metadata b-on-y'>&#8193;</span> | 
+| --link <span className='y-link b-y'>&#8193;</span><span className='ui-dark y-link b-y'>&#8193;</span> | --light-link <span className='y-link b-light-y'>&#8193;</span><span className='ui-dark y-link b-light-y'>&#8193;</span> | --dark-link <span className='y-link b-dark-y'>&#8193;</span><span className='ui-dark y-link b-dark-y'>&#8193;</span> | --on-link <span className='y-link b-on-y'>&#8193;</span><span className='ui-dark y-link b-on-y'>&#8193;</span> | 
+
+All of the previous colors are included in both the `light` and the `dark` themes.
 
 Themes can be manually triggered using the class api `ui-{themeName}`, that is to say `ui-light` and `ui-dark`. Said in another way : `.ui-{themeName}` sets ALL of the previous variables. 
 
@@ -58,9 +62,9 @@ function AppWithDarkThemeToggle() {
 Of course, you can also apply other colors than theme variables to your content. In this case, if you apply a theme, these elements will keep their color, like the red block.
 
 :::note
-As you can see, triggering the dark theme is completely effortless, provided you have set the right variables to your content. 
+As you can see, triggering the dark theme is completely effortless, provided you have _set_ the right variables to your content. 
 :::
 
 :::tip
-Light theme provided as a default in :root. 
+Light theme provided as a default in :root. This means, the light theme is applied by default when you _get_ any of the _themable_ variables. 
 :::

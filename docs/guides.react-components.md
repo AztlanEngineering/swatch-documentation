@@ -3,17 +3,20 @@ slug: guides-react-components
 title: React components
 ---
 
-There are different ways you can use Swatch to theme your React components. If you are not using React, it is likely you can still use this guide to get inspired the different patterns available for you.
+There are different ways you can use Swatch to theme your React components. If you are using an other front-end framework than React, it is likely you can still find in this guide a pattern useful for you.
 
-The selection of the right pattern will greatly depend on your coding style, whether 
+Feel free to adapt the below pattern depending on whether :
   + You use CSS modules or a separate CSS file for each component, CSS in JS, basically you write CSS separately from HTML
   + You prefer style properties (you write your CSS Inline)
 
+<!--
 ## Pattern 1 : Keeping CSS and HTML/JSX separate
 
 This way of doing coloring is for you if you write your CSS separately from your React component.
+-->
 
-### An example : making a colored button
+
+## An example : making a colored button
 
 
 First, write the component (S)CSS. We recommend you do it in a separate file.
@@ -60,6 +63,7 @@ className={[
   baseClassName, 
   className //The user-provided class, which we'll read the getter from
 ].join(' ')}
+{...props}
 >
   This is a colored button
 </button>)
@@ -118,11 +122,11 @@ function Playground() {
           }
         ` }}/>
 
-        <span>
+        <div>
           The following button takes its background-color from the setter <code>x</code>.
         <br/>The color on the inside text is <em>automatically</em> inferred from the background.
         <br/> On hover, this button takes a darker shade of the color <code>x</code>
-        <br/> On active, this button takes a lighter shade of the color <code>x</code></span>
+        <br/> On active, this button takes a lighter shade of the color <code>x</code></div>
 
       <ColoredButton className='x-warning'/>
       <ColoredButton className='x-blue'/>
@@ -139,7 +143,8 @@ Once you get more familiar with the Setter/Getter pattern, you will only be limi
 :::
 :::tip Try this !
 In the above playground, make the button background transparent, and get both the color and a 1px border-color from the `x` setter.
-:::
+:::o
+<!---
 
 ## Example 2 : Inline Theming
 
@@ -148,3 +153,4 @@ In the above playground, make the button background transparent, and get both th
 ```SCSS title='title.css'
 
 ```
+----->

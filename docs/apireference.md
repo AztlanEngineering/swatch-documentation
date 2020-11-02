@@ -3,9 +3,36 @@ slug: api-reference
 title: APIReference
 ---
 
-### Setters
+## Default colors
 
-#### Monochrome-colors
+### WHeel colors
+
+These are the colors of the color wheel.
+
+### Modal colors
+
+Modal colors are a set of colors that represent state.
+
+### Social Media Colors
+
+
+
+### Ui colors
+
+UI colors are meant to be used by the User Interface or your page or application. These colors are provided in two variants, `light` (default, L) or `dark`(D). Read more about themes [here](./guides-themes-introduction).
+
+| Main variable (L/D)| Light variant (L/D)| Dark variant (L/D)| Contrast color (L/D) 
+| :-------- | :---------- | :----------- | :----------- | 
+| --background <span className='y-background b-y'>&#8193;</span><span className='ui-dark y-background b-y'>&#8193;</span> | --light-background <span className='y-background b-light-y'>&#8193;</span><span className='ui-dark y-background b-light-y'>&#8193;</span> | --dark-background <span className='y-background b-dark-y'>&#8193;</span><span className='ui-dark y-background b-dark-y'>&#8193;</span> | --on-background <span className='y-background b-on-y'>&#8193;</span><span className='ui-dark y-background b-on-y'>&#8193;</span> | 
+| --heading <span className='y-heading b-y'>&#8193;</span><span className='ui-dark y-heading b-y'>&#8193;</span> | --light-heading <span className='y-heading b-light-y'>&#8193;</span><span className='ui-dark y-heading b-light-y'>&#8193;</span> | --dark-heading <span className='y-heading b-dark-y'>&#8193;</span><span className='ui-dark y-heading b-dark-y'>&#8193;</span> | --on-heading <span className='y-heading b-on-y'>&#8193;</span><span className='ui-dark y-heading b-on-y'>&#8193;</span> | 
+| --subtitle <span className='y-subtitle b-y'>&#8193;</span><span className='ui-dark y-subtitle b-y'>&#8193;</span> | --light-subtitle <span className='y-subtitle b-light-y'>&#8193;</span><span className='ui-dark y-subtitle b-light-y'>&#8193;</span> | --dark-subtitle <span className='y-subtitle b-dark-y'>&#8193;</span><span className='ui-dark y-subtitle b-dark-y'>&#8193;</span> | --on-subtitle <span className='y-subtitle b-on-y'>&#8193;</span><span className='ui-dark y-subtitle b-on-y'>&#8193;</span> | 
+| --metadata <span className='y-metadata b-y'>&#8193;</span><span className='ui-dark y-metadata b-y'>&#8193;</span> | --light-metadata <span className='y-metadata b-light-y'>&#8193;</span><span className='ui-dark y-metadata b-light-y'>&#8193;</span> | --dark-metadata <span className='y-metadata b-dark-y'>&#8193;</span><span className='ui-dark y-metadata b-dark-y'>&#8193;</span> | --on-metadata <span className='y-metadata b-on-y'>&#8193;</span><span className='ui-dark y-metadata b-on-y'>&#8193;</span> | 
+| --link <span className='y-link b-y'>&#8193;</span><span className='ui-dark y-link b-y'>&#8193;</span> | --light-link <span className='y-link b-light-y'>&#8193;</span><span className='ui-dark y-link b-light-y'>&#8193;</span> | --dark-link <span className='y-link b-dark-y'>&#8193;</span><span className='ui-dark y-link b-dark-y'>&#8193;</span> | --on-link <span className='y-link b-on-y'>&#8193;</span><span className='ui-dark y-link b-on-y'>&#8193;</span> | 
+
+
+## Setters
+
+### Monochrome-colors
 
 |  Setter  | Description |
 | :-----   | :-----      |
@@ -16,7 +43,7 @@ title: APIReference
 | `x-gray` & `y-gray` | Setter for color gray |
 | `xh-gray` & `yh-gray` | Setter for `:focus` & `:hover` on gray color |
 
-#### Modals-colors
+### Modals-colors
 
 | Setter | Description |
 | :----- | :------     |
@@ -27,7 +54,7 @@ title: APIReference
 | `x-success` & `y-success` | Setter for successful inputs |
 | `xh-success` & `yh-success` | Setter for `:focus` & `:hover` on success class |
 
-#### Wheel-colors
+### Wheel-colors
 
 | Setter | Description |
 | :----- | :------     |
@@ -54,7 +81,7 @@ title: APIReference
 | `x-transparent` & `y-transparent` | Setter for the transparent( color of background ) |
 | `xh-transparent` & `yh-transparent` | Setter for `:focus` & `:hover` on the transparent color |
 
-#### Theme-colors
+### Theme-colors
 
 | Setter | Description |
 | :----  | :-------    |
@@ -73,7 +100,7 @@ title: APIReference
 Accent colors can be used all together or in pair or even none at all depending your design needs.
 :::
 
-#### SM-colors
+### SM-colors
 
 SM-colors are designed to use for the social network logos.
 
@@ -88,7 +115,7 @@ SM-colors are designed to use for the social network logos.
 | `x-google` & `y-google` | Setter for google logo |
 | `xh-google` & `yh-google` | Setter for `:focus` & `:hover` on the google logo |
 
-#### UI-colors
+### UI-colors
 
 | Setter | Description |
 | :----  | :------     |
@@ -107,7 +134,7 @@ SM-colors are designed to use for the social network logos.
 | `x-metadata` & `y-metadata` | Setter for the metadatas |
 | `xh-metadata` & `y-metadata` | Setter for `:focus` & `:hover` on the metadata |
 
-#### Theme changer
+### Theme changer
 
 | Setter | Description |
 | :----  | :-------    |
