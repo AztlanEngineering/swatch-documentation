@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 Below, you will learn about the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, that we had when we came up with this solution for coloring and theming. 
 
-The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring, or global and scopes coloring. On the contrary, this section has a more abstract and theoretical focus.
+The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring or global theming. In contrast, this section has a more abstract and theoretical focus.
 
 We greatly invite you to read this section so that you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
 
@@ -282,7 +282,7 @@ Here, we are also using the CSS4 variables, altough in a more efficient way.
 
 
 **Concretely, we are doing the following**
-1. **Defining CSS4 variables at the root level**
+1. **Defining CSS4 variables at the [root level](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)**
 2. **Defining CSS helper classes that set a special variable called `current-color` to the previously defined CSS4 variables**
 3. **Defining CSS classes that 'consume' the `current-color` variable and apply it to the element.**
 
@@ -320,6 +320,6 @@ Swatch works by using the previous pattern, in
 ## A few words about scope
 
 :::tip
-Did you know that CSS4 variables have the 'power' of being inherited by the [Shadow Dom](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) ? This means you can easily use CSS4 variables (and the Swatch library), to theme subdocuments included through the `use` directive. This feature allows you to style, for instance, svg sprites. [Read more about this here](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) (the part about CSS4 variables is located at the end of the article).
+CSS4 variables have the 'power' of being inherited by the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). This means you can easily use CSS4 variables (and the Swatch library), to theme subdocuments included through the [&lt;use&gt; tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This feature allows you to style, for instance, svg sprites. [Read more about this here](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) (the part about CSS4 variables is located at the end of the article).
 :::
 
