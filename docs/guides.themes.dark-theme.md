@@ -1,37 +1,25 @@
 ---
 slug: guides-themes-dark-theme
-title: Introduction
+title: Dark Theme / Global Themes
 ---
 
-### What is Swatch?
+Everybody likes dark theme.
 
-Color Swatch is a great CSS color library which makes a great and beautiful UI. The newest toolkit in the front-end world. It contain SASS variables and CSS4 variables which makes it the most updated version of CSS libraries.
+**Before applying themes to your app, you need to apply theme variables to your content.** We explain how to do it, and which are the available themes variables here :  [Guides > Themes > A Primer on Swatch Themes](./guides-themes-introduction).
 
----
 
-### Why should we use Swatch?
+Enabling dark theme in Swatch is as easy as applying the class `ui-dark` to any root element or wrapper, for instance :
 
-Color Swatch is created by SASS laguage and includes the CSS4 variables which makes it a lot more creative and a lot easier to use, also helps you to have a lot more possibilities in UI design. You can even have a customized Color library depending on your desire of colors you need in your design.
 
----
+```jsx live
+<body> className={`${currentTheme} y-background b-y`} style={{ padding:'1em' }}>
 
-### What are the advantages?
+  <button onClick={ toggleCurrentTheme }>Click me to change theme !</button>
+  <h1 className='x-heading c-x'>Some news article</h1>
+  <p className='x-subtitle c-x' style={{ fontSize:'2em' }}>A detailed reason for you to read the article </p>
+  <p className='x-metadata c-x'>Published on August 10</p>
+  <p className='x-paragraph c-x'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla ligula vel mollis ultrices. Proin sodales faucibus sodales. Ut libero nisi, venenatis in neque interdum, ullamcorper scelerisque erat. Phasellus non lectus nisl. Quisque vel laoreet libero. Cras mi ante, efficitur a tincidunt ac, cursus at metus. Morbi porttitor magna non ipsum porttitor, vitae scelerisque arcu ullamcorper. Aenean non sapien vel leo aliquam dictum in in metus. In et elit mauris. Pellentesque ac pharetra erat. </p>
+  <div className='y-red b-y'>This div has a red background. This doesnt change with the theme.</div>
+</body>
+```
 
-#### First
-CSS4 variables and SASS variables each have different purposes which is quit specific to them and both are useful in their own special places so we decided to use both of them to make sure that we used them both to make this library as powerful as possible and also make it as customizable as possible for you.
-
-#### Second
-It helps you write your code faster and easier with the same or better results in some cases because you can have the colors as getters in you parent class and just call them where ever you need them so you don't have to write the css code for them and call them in your HTML and not to mention to remember the name of the classes you used which is confusing specially on big projects.
-
-#### Third
-As said earlier one of the great advantages that is absolutely lovable is that this is a special library that you can customize yourself for your own specific needs without needing to write a library or a big stylesheet from scratch yourself but the question is how?
-
-We will explain that in dept later but just to clearify here the only coding you need to do to customize the whole library to make it suitable for your need is to define a class with all the variables you need ( not all of them ) with new values that you like. Although for this you need to know the CSS4 variables and how to use them. But fear not, we will talk about that too.
-
----
-
-### How do we use it?
-
-Just like a normal CSS file we should link the extracted `main.css` file from the SASS to our HTML file and use it's classes in the class names. Easy right?
-
-Now click **_Next_** below to install the library and give it a try together.

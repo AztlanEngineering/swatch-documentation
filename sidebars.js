@@ -16,8 +16,8 @@ module.exports = {
       'guides.react-components',
       {
         Themes:[
-          'guides.themes.dark-theme',
           'guides.themes.local-themes',
+          'guides.themes.dark-theme',
         ]
       }
     ],

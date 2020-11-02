@@ -1,37 +1,64 @@
 ---
-slug: guides-themes-local-themes
-title: Introduction
+slug: guides-themes-introduction
+title: A Primer on Swatch Themes
 ---
 
-### What is Swatch?
+You will find in this section an explanation of how themes relate to the Swatch coloring and theming library.
 
-Color Swatch is a great CSS color library which makes a great and beautiful UI. The newest toolkit in the front-end world. It contain SASS variables and CSS4 variables which makes it the most updated version of CSS libraries.
+### How are themes represented in Swatch ?
 
----
+In Swatch, a theme is an ensemble of CSS4 variables. 
 
-### Why should we use Swatch?
+There are two themes provided by default : `light` and `dark`.
 
-Color Swatch is created by SASS laguage and includes the CSS4 variables which makes it a lot more creative and a lot easier to use, also helps you to have a lot more possibilities in UI design. You can even have a customized Color library depending on your desire of colors you need in your design.
+Both themes include the following CSS4 variables and their variants
+| Main variable | Light variant | Dark variant | Contrast color |
+| --background  | --light-background | --dark-background | --on-background |
+| --heading
+| --subtitle
+| --metadata
+| --description
 
----
+Themes can be manually triggered using the class api `ui-{themeName}`, that is to say `ui-light` and `ui-dark`. Said in another way : `.ui-{themeName}` sets ALL of the previous variables. 
 
-### What are the advantages?
+The following example should give you a better idea of this
 
-#### First
-CSS4 variables and SASS variables each have different purposes which is quit specific to them and both are useful in their own special places so we decided to use both of them to make sure that we used them both to make this library as powerful as possible and also make it as customizable as possible for you.
+```jsx live
+function AppWithDarkThemeToggle() {
+  
+  const availableThemes = [
+    'ui-light',
+    'ui-dark'
+  ]
 
-#### Second
-It helps you write your code faster and easier with the same or better results in some cases because you can have the colors as getters in you parent class and just call them where ever you need them so you don't have to write the css code for them and call them in your HTML and not to mention to remember the name of the classes you used which is confusing specially on big projects.
+  const [currentTheme, setCurrentTheme] = useState(availableThemes[0])
 
-#### Third
-As said earlier one of the great advantages that is absolutely lovable is that this is a special library that you can customize yourself for your own specific needs without needing to write a library or a big stylesheet from scratch yourself but the question is how?
+  const toggleCurrentTheme = () => {
+    const currentThemeIndex = availableThemes.findIndex(e => e === currentTheme)
+    const nextThemeIndex = (currentThemeIndex + 1) % availableThemes.length
+    setCurrentTheme(availableThemes[nextThemeIndex])
+  }
 
-We will explain that in dept later but just to clearify here the only coding you need to do to customize the whole library to make it suitable for your need is to define a class with all the variables you need ( not all of them ) with new values that you like. Although for this you need to know the CSS4 variables and how to use them. But fear not, we will talk about that too.
+  return (
+    <div className={`${currentTheme} y-background b-y`} style={{ padding:'1em' }}>
 
----
+    <button onClick={ toggleCurrentTheme }>Click me to change theme !</button>
+      <h1 className='x-heading c-x'>Some news article</h1>
+      <p className='x-subtitle c-x' style={{ fontSize:'2em' }}>A detailed reason for you to read the article </p>
+      <p className='x-metadata c-x'>Published on August 10</p>
+      <p className='x-paragraph c-x'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla ligula vel mollis ultrices. Proin sodales faucibus sodales. Ut libero nisi, venenatis in neque interdum, ullamcorper scelerisque erat. Phasellus non lectus nisl. Quisque vel laoreet libero. Cras mi ante, efficitur a tincidunt ac, cursus at metus. Morbi porttitor magna non ipsum porttitor, vitae scelerisque arcu ullamcorper. Aenean non sapien vel leo aliquam dictum in in metus. In et elit mauris. Pellentesque ac pharetra erat. </p>
+      <div className='y-red b-y'>This div has a red background. This doesnt change with the theme.</div>
+    </div>
+  ) 
+}
+```
 
-### How do we use it?
+Of course, you can also apply other colors than theme variables to your content. In this case, if you apply a theme, these elements will keep their color, like the red block.
 
-Just like a normal CSS file we should link the extracted `main.css` file from the SASS to our HTML file and use it's classes in the class names. Easy right?
+:::note
+As you can see, triggering the dark theme is completely effortless, provided you have set the right variables to your content. 
+:::
 
-Now click **_Next_** below to install the library and give it a try together.
+:::tip
+Light theme provided as a default in :root. 
+:::
