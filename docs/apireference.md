@@ -86,7 +86,7 @@ Accent colors can be used all together or in pair or even none at all depending 
 | `ui-iceberg` | Setter for the parent element (i.e body) |
 
 :::note 
-This setter is designed to be used on the parent element to change the color scheme of the document.
+This setter is designed to be used on the parent element to change the color scheme of the document but depending on your needs you can use them on any part of your code/components code.
 :::
 
 ### Getters 
@@ -103,7 +103,7 @@ We currently have `b` & `c` as Getters for simplicity of the library for you but
 :::
 ### Mixins of each part of the library
 
-If you rather to input one part of the Swatch to your own library.
+If you rather to input one group of Swatch library variables to your own library simply just add the related input code from table below into your own SCSS library.
 
 :::info
 It's recommended to use `@use` rule instead of `@import` rule for it's multiple advantages.
@@ -111,9 +111,9 @@ It's recommended to use `@use` rule instead of `@import` rule for it's multiple 
 
 | irective      |     Description      |
 | :------------ |     :----------      |
-| `@include mixins.define-variables(vars.monochrome-colors);` | Adds the monochrome colors to the library |
-| `@include mixins.define-variables(vars.modals-colors);` | Adds the modals colors to the library |
-| `@include mixins.define-variables(vars.wheel-colors);` | Adds the wheel colors to the library |
-| `@include mixins.define-variables(vars.theme.colors);` | Adds the Theme colors to the library |
-| `@include mixins.define-variables(vars.sm-colors);` | Adds the SM colors to the library |
-| `@include mixins.define-variables(vars.ui-colors);` | Adds the UI colors to the library |
+| `@mixins.define-variables(vars.monochrome-colors);` | Adds the monochrome colors to the library |
+| `@mixins.define-variables(vars.modals-colors);` | Adds the modals colors to the library |
+| `@mixins.define-variables(vars.wheel-colors);` | Adds the wheel colors to the library |
+| `@mixins.define-variables(vars.theme.colors);` | Adds the Theme colors to the library |
+| `@mixins.define-variables(vars.sm-colors);` | Adds the SM colors to the library |
+| `@mixins.define-variables(vars.ui-colors);` | Adds the UI colors to the library |
