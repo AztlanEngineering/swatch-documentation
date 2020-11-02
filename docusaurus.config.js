@@ -39,8 +39,8 @@ module.exports = {
               to   :'docs/introduction',
             },
             {
-              label:'Installation',
-              to   :'docs/installation',
+              label:'Quick Install',
+              to   :'docs/getting-started-quick-install',
             },
 	     {
 	       label:'API Reference',
