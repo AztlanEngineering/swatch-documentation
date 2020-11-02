@@ -21,7 +21,6 @@ The colors _setters_ are CSS classes which have the syntax `x-{color}`, `y-{colo
 For instance `x-background`, `y-red`, `xh-yellow`, `yh-twitter` are all valid color setters.
 
 :::note
-You can add, remove, rename colors by compiling your own version of Swatch from SCSS. [Instructions here](./advanced-custom-palette)
 :::
 
 ### Variables locally set
