@@ -33,7 +33,23 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 
 #### What is it made with?
 
-[![made-with-NVIM](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://github.com/neovim/neovim)
+[![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim)
+
+#### Github License
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+#### Maintainance?
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fwrlines/swatch/graphs/commit-activity)
+
+#### Docs issues
+
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch-docs/issues)
+
+#### What is it made with?
+
+[![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim)
 
 # Credits
 
