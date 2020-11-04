@@ -30,6 +30,8 @@ This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern 
 ```
 $ npm i
 ```
+[![Generic badge](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
+
 
 ### Local Development
 
