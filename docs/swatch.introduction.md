@@ -7,7 +7,7 @@ title: Introduction
 
 **Swatch is a CSS library that aims at solving theming using CSS4 variables and the setter/getter pattern.**
 
-In other words, Swatch is a CSS library that aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
+In other words, Swatch aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
 
 You can use this library to take care of **all** the coloring needs of your HTML, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
 
@@ -28,12 +28,12 @@ Swatch relies on an interpretation of the Setter/Getter pattern applied to the D
 + The setters are helper CSS classes that set CSS4 variables to the scope of a DOM node
 + The getters are CSS classes that take scope CSS4 variables to apply them as a CSS property to a DOM node in the scope. 
 
-The aim of these docs is to explain in detail how this pattern can be use extremely efficiently to solve your coloring needs, so don't worry if you this explanation is not enough at the moment. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
+The aim of these docs is to explain in detail how this pattern can be used extremely efficiently to solve your coloring needs, so don't worry if you think this explanation is not enough at the moment. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
 
 ## Who is this library for ?
 
 The Swatch CSS library is designed for **developers who have medium to advanced experience in CSS and HTML**. This library is meant for you if :
-+ You have dreamt of a simple, code-efficient way to apply coloring to your components and pages, whether they are web-components, React components, or simple html pages.
++ You have felt the need for a simple, code-efficient way to apply coloring to your components and pages, whether they are web-components, React components, or simple html pages.
 + You have failed to find extensible, satisfactory solutions in the mainstream existing libraries.
 + You have a bit of experience in object-oriented programming so the _Swatch way of doing things_ will feel more natural to you.
 + You are interested in cutting-edge web design and you have already been looking at CSS4 variables as way to make your stylesheets more efficient.

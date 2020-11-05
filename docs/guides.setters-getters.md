@@ -219,7 +219,7 @@ With CSS4 variables, we would write the following code to achieve the same funct
 
 This approach is very similar to the preprocessor approach, and only improves on it by making the variable available to the broswer (and not having to compile). Concretely, it allows you to play with varaibles at the browser level (enjoy inheritance, scope, and debug utilities).
 
-**Subsequently, it still doesnt solve the problem of having a huge number of Colors x Components.**
+**Subsequently, it still doesn't solve the problem of having a huge number of Colors x Components.**
 
 :::note
 In the CSS inspector of your browser, you can see the variables available in the page and modify/debug them.
@@ -227,7 +227,7 @@ In the CSS inspector of your browser, you can see the variables available in the
 ![Your browser inspector](https://i.imgur.com/aFWp3hN.png)
 :::
 
-To wrap it up, we've seen through the previous examples that the two main issues of doing coloring and theming in CSS are 
+To wrap it up, we've seen through the previous examples that the two main issues of doing coloring and theming in CSS are:
 + Managing colors, which can be improved through the use of variables (preprocessor, or more modern native CSS4)
 + Managing the problem of having 'exponential classes', that is to say one class x Color x Component.This problem translates into _lot_ of code to write, to maintain, and make our end-users request...
 

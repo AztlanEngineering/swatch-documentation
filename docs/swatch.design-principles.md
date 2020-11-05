@@ -20,7 +20,7 @@ You just got used to a feature in a library, and, all of a sudden, the feature g
 We commit not to introduce breaking changes in the releases.
 
 :::info
-To ensure API stability, we have been using internally this library for over a year in production-grade environments before releasing it to you.
+To ensure API stability, we have been using internally this library for over a year in **production-grade environments** before releasing it to you.
 :::
 
 Also, we wish to commit our work on Swatch to stabilizing the core set of features (being a color library) so that the library is good at what is does. Nothing less and nothing more.

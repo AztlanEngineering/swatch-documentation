@@ -12,20 +12,20 @@ import TabItem from '@theme/TabItem';
 + You are ok with using the library with the default variables and colors
 + You want to test the library and see whether it suits you
 
-Next you will find the instructions to install the precompiled and minified version of Swatch. This version includes the complete set setters, getters, the default 10 colors and 2 themes (light and dark).
+Next you will find the instructions to install the precompiled and minified version of Swatch. This version includes the complete set of setters, getters, the default 10 colors and 2 themes (light and dark).
 
 ## Option 1 : One-minute install
 
 This is the simplest way to have the library running. 
 
-Just put this line between the `<head>` and `</head>` tags of your html template.
+Just put the line below inside the `<head>` tag of your html template.
 ```html title='index.html'
 <link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/main.min.css">
 ```
 
 ## Option 2 : Bundle minified css from npm
 
-If you wish to import this library as a module, you can install it from NPM using :
+If you wish to import this library as a module, you can install it from NPM(node-package-manager) using :
 ```bash
 npm i @fwrlines/swatch
 ```
