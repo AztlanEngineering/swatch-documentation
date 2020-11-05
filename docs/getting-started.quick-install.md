@@ -66,7 +66,7 @@ Now you've installed the library, you can test it is successfully installed by w
 
 This was your first glance at the actual workings of the library. 
 
-In the next step, you will learn the workings of the Swatch coloring library. You will get familiar with the _Swatch way of doing things_, an efficient new paradigm to manage theming and colors on your front-end projects ! 
+In the next step, you will learn the rationale in using the Swatch coloring library. You will get familiar with the _Swatch way of doing things_, an efficient new paradigm to manage theming and colors on your front-end projects ! 
 
 
 **Go the the Guides section, and [start learning](./guides-setters-getters) !**

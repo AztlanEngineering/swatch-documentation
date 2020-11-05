@@ -44,7 +44,7 @@ module.exports = {
             },
 	          {
 	             label:'API Reference',
-	             to   :'docs/apireference',
+	             to   :'docs/api-reference',
 	          }
           ],
         },
@@ -81,7 +81,7 @@ module.exports = {
         docs:{
           sidebarPath:require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl    :'https://github.com/fwrlines/swatch-docs/edit/master/website/',
+          editUrl    :'https://github.com/fwrlines/swatch-docs/edit/master/',
         },
         blog:{
           showReadingTime:true,

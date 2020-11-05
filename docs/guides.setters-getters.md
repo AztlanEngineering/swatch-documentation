@@ -6,11 +6,11 @@ title: Setters, Getters & Scope
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Below, you will learn about the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, that we had when we came up with this solution for coloring and theming. 
+Below, you will learn the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, the reflexion we had along with the design of this solution. 
 
 The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring or global theming. In contrast, this section has a more abstract and theoretical focus.
 
-We greatly invite you to read this section so that you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
+We greatly invite you to read this section so you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
 
 ## The problem : Coloring components imply exponential CSS classes
 
@@ -45,7 +45,7 @@ If you wish to make a block with a blue background, your code might look like th
   </TabItem>
 </Tabs>
 
-The `div` element will appear with the css `background:#05668D`. Pretty simple and basic.
+The `div` element will appear styled with the CSS property and value couple `background:#05668D`. Pretty basic.
 
 And if you wish to use the same color for another element, let's say a paragraph of text, you would have to do :
 
@@ -118,8 +118,8 @@ Now, if we wish to introduce a second color, say red, we would have something mo
 Here, we have 4 classes in total (2 blocks x 2 colors). If we had 12 colors, we would need 2 x 12 = 24 classes to express this logic. If we had also 10 blocks to style, we would need 10 x 12 = 120 css classes to write.
 
 **As you can infer, this approach is hardly scalable/maintainable because of the following caveats :**
-+ Changing a color requires to change ALL the occurences of the hex code in the source CSS:
 + We need to write classes for each Color x Component association, this rapidly becomes a burden to write and maintain.
++ Changing a color requires to change ALL the occurences of the hex code in the source CSS:
 
 ### Easier maintainance using preprocessor variables
 
@@ -167,12 +167,12 @@ $red:#DF1F00!default; /* Red */
 </Tabs>
 
 **This approach has the following caveats :**
-+ The compiled CSS resolve the variables to their values, meaning if you don't have access to the source code or are not willing to dive into it to recompile it, changing them will be time consuming, and you would have to do it again every time the source changes. 
 + This approach doesn't solve the need to write classes for each Color x Component association, so we would end up with the same amount of Components x Colors classes.
++ The compiled CSS resolve the variables to their values, meaning if you don't have access to the source code or are not willing to dive into it to recompile it, changing them will be time consuming, and you would have to do it again every time the source changes. 
 
 ### Introducing CSS Variables. Easier to debug/maintain but doesn't solve the problem.
 
-CSS4 introduced CSS variables, which are at the time of writing (November 2020), are [supported by 95%](https://caniuse.com/css-variables) of browsers. If you are coding for IE11, you are probably not looking to use cutting-edge features anyway.
+CSS4 introduced CSS variables, which are at the time of writing (November 2020), are [supported by 95%](https://caniuse.com/css-variables) of browsers. (If you are coding for ~~IE6~~ IE11, you are probably not looking to use cutting-edge features anyway.)
 
 With CSS4 variables, we would write the following code to achieve the same functionality.
 
@@ -217,7 +217,7 @@ With CSS4 variables, we would write the following code to achieve the same funct
   </TabItem>
 </Tabs>
 
-This approach is very similar to the preprocessor approach, and only improves on it by making the variable available to the broswer (and not having to compile). Concretely, it allows you to play with varaibles at the browser level (work on inheritance, scope, or simply debug it).
+This approach is very similar to the preprocessor approach, and only improves on it by making the variable available to the broswer (and not having to compile). Concretely, it allows you to play with varaibles at the browser level (enjoy inheritance, scope, and debug utilities).
 
 **Subsequently, it still doesnt solve the problem of having a huge number of Colors x Components.**
 
@@ -227,7 +227,11 @@ In the CSS inspector of your browser, you can see the variables available in the
 ![Your browser inspector](https://i.imgur.com/aFWp3hN.png)
 :::
 
-Now you probably see where this is going ...
+To wrap it up, we've seen through the previous examples that the two main issues of doing coloring and theming in CSS are 
++ Managing colors, which can be improved through the use of variables (preprocessor, or more modern native CSS4)
++ Managing the problem of having 'exponential classes', that is to say one class x Color x Component.This problem translates into _lot_ of code to write, to maintain, and make our end-users request...
+
+**Now you probably see where this is going : we will solve the problem of having exponential classes ...**
 
 ## Introducing the Setter and Getter Pattern
 
@@ -291,13 +295,18 @@ Here, we are also using the CSS4 variables, altough in a more efficient way.
 </ins>
 
 
-Let's take a moment to breathe and realize the code savings.
+
+<p></p>
+
+:::note
+Let's make a short break to realize the code savings.
 
 Here, the total number of classes is 4 as well (2 'setter' classes, and 2 consumers, or 'getters'). If we add more Components or Colors, the quantity of code increases in a linear way.
 
 + If we had 12 colors, we would have 12 setters + 2 getters = 12 classes (instead of 24, reduction of 50%)
 + If we had 12 colors and 10 components, we would have 12 setters + 10 getters = 22 classes (instead of 120, reduction of 82%)
 + If we had 12 colors and a bigger component library, say including 100 components, we would have 12 setters + 100 getters = 112 classes (instead of 100 * 12 = 1200, reduction of 92%).
+:::
 
 **As you can see, this approach**
 + ✅ Implies a very minimal overhead for simple code
@@ -317,13 +326,13 @@ Swatch is a CSS library that leverages this pattern for you to color and theme y
 
 There are two differences with the previous (illustrative) example :
 + Local variable is called `x`instead of `current-color`.
-+ The local variable setters set **4** local variables (for instance the full _color swatch_ of red) instead of just one (just the main red color).
++ The local variable setters set **4** local variables (for instance the full _color swatch_ of red) instead of just one (for instance just the main red color).
 
 **Don't worry. If this is still not clear, the following infographic will sum it up for you !**
 
-![Infographic Explanation](https://i.imgur.com/fcige41.png)
+![Infographic Explanation](https://i.imgur.com/3xC8k5P.png)
 
-**Yes, Swatch provides ALL the required CSS for you to leverage the Setter/Getter pattern. The only thing you have to do is write HTML !**
+**And yes, Swatch provides ALL the required CSS for you to leverage the Setter/Getter pattern. The only thing you have to do is write HTML !**
 
 Also, Swatch is extensible :
 + You can create your own _getters_ in a few lines of CSS (This is explained in the next section)
@@ -338,7 +347,7 @@ Setters and Getters work by associating variables to a Scope.
 
 If we want to pursue the comparison with the Setter and Getter pattern in OOP :
 + The object is a DOM node
-+ The setters set variableis to the scope of the DOM node (so, the DOM node can consume it, as well as its children)
++ The setters set variable to the scope of the DOM node (so, the DOM node can consume it, as well as its children)
 + The getters read the variables in the scope and apply it as styles to the same or a children node.
 
 :::tip
