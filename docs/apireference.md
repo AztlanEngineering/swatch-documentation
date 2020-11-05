@@ -93,10 +93,10 @@ Getters are CSS classes that take a locally-set CSS4 variable and apply it as a 
 
 | Main variable | Light variant | Dark variant | Contrast color | Description | 
 | :-------- | :---------- | :----------- | :----------- | :-------- | 
-| `.b-x` | `.b-light-x` | `.b-dark-x` | `.b-on-x` | Getter CSS class that apply the scoped ‘x’ color as background of the target element | 
-| `.b-y` | `.b-light-y` | `.b-dark-y` | `.b-on-y` | Getter CSS class that apply the scoped ‘y’ color as background of the target element |
-| `.c-x` | `.c-light-x` | `.c-dark-x` | `.c-on-x` | Getter CSS class that apply the scoped ‘x’ color as color of the target element |
-| `.c-y` | `.c-light-y` | `.c-dark-y` | `.c-on-y` | Getter CSS class that apply the scoped ‘y’ color as color of the target element |
+| `.b-x` | `.b-light-x` | `.b-dark-x` | `.b-on-x` | Getter CSS class that apply the scoped ‘x’ color or one of its variants as background of the target element | 
+| `.b-y` | `.b-light-y` | `.b-dark-y` | `.b-on-y` | Getter CSS class that apply the scoped ‘y’ color or one of its variants as background of the target element |
+| `.c-x` | `.c-light-x` | `.c-dark-x` | `.c-on-x` | Getter CSS class that apply the scoped ‘x’ color or one of its variants as color of the target element |
+| `.c-y` | `.c-light-y` | `.c-dark-y` | `.c-on-y` | Getter CSS class that apply the scoped ‘y’ color or one of its variants as color of the target element |
 
 :::note 
 At the moment we have choosen to only provide stock getters for the CSS properties `color` and `background`. 
