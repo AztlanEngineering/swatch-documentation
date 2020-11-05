@@ -5,9 +5,9 @@ title: A Primer on Swatch Themes
 
 Now, you know how to use setters and getters to apply colors to your html blocks or components. But how can we leverage the power of Swatch to apply themes at the application level ?
 
-### How are themes represented in Swatch ?
+## How are themes represented in Swatch ?
 
-In Swatch, a theme is an ensemble of CSS4 variables. 
+**<ins>In Swatch, a theme is an ensemble of CSS4 variables. </ins>**
 
 There are two themes provided by default : `light` and `dark`.
 
@@ -23,11 +23,12 @@ Here is a table of all the _themable_ colors, as well as their `light` (L) and `
 | --metadata <span className='y-metadata b-y'>&#8193;</span><span className='ui-dark y-metadata b-y'>&#8193;</span> | --light-metadata <span className='y-metadata b-light-y'>&#8193;</span><span className='ui-dark y-metadata b-light-y'>&#8193;</span> | --dark-metadata <span className='y-metadata b-dark-y'>&#8193;</span><span className='ui-dark y-metadata b-dark-y'>&#8193;</span> | --on-metadata <span className='y-metadata b-on-y'>&#8193;</span><span className='ui-dark y-metadata b-on-y'>&#8193;</span> | 
 | --link <span className='y-link b-y'>&#8193;</span><span className='ui-dark y-link b-y'>&#8193;</span> | --light-link <span className='y-link b-light-y'>&#8193;</span><span className='ui-dark y-link b-light-y'>&#8193;</span> | --dark-link <span className='y-link b-dark-y'>&#8193;</span><span className='ui-dark y-link b-dark-y'>&#8193;</span> | --on-link <span className='y-link b-on-y'>&#8193;</span><span className='ui-dark y-link b-on-y'>&#8193;</span> | 
 
-All of the previous colors are included in both the `light` and the `dark` themes.
 
-Themes can be manually triggered using the class api `ui-{themeName}`, that is to say `ui-light` and `ui-dark`. Said in another way : `.ui-{themeName}` sets ALL of the previous variables. 
+## Example of applying a site-wide theme
 
-The following example should give you a better idea of this
+Themes can be manually triggered using the class api `ui-{themeName}`, that is to say `ui-light` and `ui-dark`. Said in another way : `.ui-{themeName}` sets ALL of the _themable_ variables. 
+
+The following example should give you a better idea of the theme api.
 
 ```jsx live
 function AppWithDarkThemeToggle() {

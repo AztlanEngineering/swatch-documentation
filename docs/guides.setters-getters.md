@@ -313,11 +313,33 @@ In the next sections of the Guides,
 
 ## Introducing Swatch
 
-Swatch works by using the previous pattern, in 
+Swatch is a CSS library that leverages this pattern for you to color and theme your UI in a code-efficient way.
+
+There are two differences with the previous (illustrative) example :
++ Local variable is called `x`instead of `current-color`.
++ The local variable setters set **4** local variables (for instance the full _color swatch_ of red) instead of just one (just the main red color).
+
+**Don't worry. If this is still not clear, the following infographic will sum it up for you !**
+
+![Infographic Explanation](https://i.imgur.com/fcige41.png)
+
+**Yes, Swatch provides ALL the required CSS for you to leverage the Setter/Getter pattern. The only thing you have to do is write HTML !**
+
+Also, Swatch is extensible :
++ You can create your own _getters_ in a few lines of CSS (This is explained in the next section)
++ You can change the default palette and modify the default setter syntax by compiling your own version in SCSS.
+
+**Now you are familiar with the rationale defining Swatch, the next thing to do is to look at [usage examples and start building your own html and components](./guides-basic-usage) !**
 
 
+## (Advanced) A few words about scope
 
-## A few words about scope
+Setters and Getters work by associating variables to a Scope. 
+
+If we want to pursue the comparison with the Setter and Getter pattern in OOP :
++ The object is a DOM node
++ The setters set variableis to the scope of the DOM node (so, the DOM node can consume it, as well as its children)
++ The getters read the variables in the scope and apply it as styles to the same or a children node.
 
 :::tip
 CSS4 variables have the 'power' of being inherited by the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). This means you can easily use CSS4 variables (and the Swatch library), to theme subdocuments included through the [&lt;use&gt; tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This feature allows you to style, for instance, svg sprites. [Read more about this here](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) (the part about CSS4 variables is located at the end of the article).
