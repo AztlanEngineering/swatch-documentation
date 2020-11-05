@@ -91,12 +91,12 @@ Getters are CSS classes that take a locally-set CSS4 variable and apply it as a 
 
 ### Getters 
 
-| Main variable | Light variant | Dark variant | Contrast color | 
-| :-------- | :---------- | :----------- | :----------- | 
-| b-x <span className='x-green b-x'>&#8193;</span> | b-light-x <span className='x-green b-light-x'>&#8193;</span> | b-dark-x <span className='x-green b-dark-x'>&#8193;</span> | b-on-x <span className='x-green b-on-x'>&#8193;</span> | 
-| b-y <span className='y-red b-y'>&#8193;</span> | b-light-y <span className='y-red b-light-y'>&#8193;</span> | b-dark-y <span className='y-red b-dark-y'>&#8193;</span> | b-on-y <span className='y-red b-on-y'>&#8193;</span> | 
-| c-x <span className='x-blue c-x'>test</span> | c-light-x <span className='x-blue c-light-x'>test</span> | c-dark-x <span className='x-blue c-dark-x'>test</span> | c-on-x <span className='x-blue c-on-x'>test</span> | 
-| c-y <span className='y-azure c-y'>test</span> | c-light-y <span className='y-azure c-light-y'>test</span> | c-dark-y <span className='y-azure c-dark-y'>test</span> | c-on-y <span className='y-azure c-on-y'>test</span> | 
+| Main variable | Light variant | Dark variant | Contrast color | Description | 
+| :-------- | :---------- | :----------- | :----------- | :-------- | 
+| `.b-x` | `.b-light-x` | `.b-dark-x` | `.b-on-x` | Getter CSS class that apply the scoped ‘x’ color or one of its variants as background of the target element | 
+| `.b-y` | `.b-light-y` | `.b-dark-y` | `.b-on-y` | Getter CSS class that apply the scoped ‘y’ color or one of its variants as background of the target element |
+| `.c-x` | `.c-light-x` | `.c-dark-x` | `.c-on-x` | Getter CSS class that apply the scoped ‘x’ color or one of its variants as color of the target element |
+| `.c-y` | `.c-light-y` | `.c-dark-y` | `.c-on-y` | Getter CSS class that apply the scoped ‘y’ color or one of its variants as color of the target element |
 
 :::note 
 At the moment we have choosen to only provide stock getters for the CSS properties `color` and `background`. 

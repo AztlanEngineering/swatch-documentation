@@ -5,7 +5,7 @@ sidebar_label: Manual Compilation
 ---
 
 **This section applies to you if:**
-+ **You are want to get your hands dirty with the source code**
++ **You want to get your hands dirty with the source code**
 + **You want to work your custom version of the library**, by modifying the variables **outside of a build system** (if you want to compile a customized version while bundling from the npm module, check the [Webpack](./getting-started-webpack) section).
 + **You want to modify the postcss config**...
 + ... or do other kinds of witchcraft on the source code
