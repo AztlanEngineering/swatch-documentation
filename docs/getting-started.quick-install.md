@@ -25,7 +25,7 @@ Just put this line below inside the `<head>` tag of your html template.
 
 ## Option 2 : Bundle minified css from npm
 
-If you wish to import this library as a module, you can install it from NPM(node-package-manager) using :
+If you wish to import this library as a module, you can install it from NPM using :
 ```bash
 npm i @fwrlines/swatch
 ```
