@@ -26,6 +26,6 @@ module.exports = {
       //'advanced.custom-themes',
       //'advanced.scoped-theming'
     ],
-    "APIReference":['apireference']
+    "API Reference":['apireference']
   },
 }
