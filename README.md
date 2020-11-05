@@ -14,10 +14,14 @@ The main objective of the swatch library is reliability and stability, more than
 
 # Contributions
 
+[![GitHub contributors](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch/graphs/contributors)
+
 If you wish to raise an issue or contact the team, we welcome your messages in the following way
 + Report issues regarding the css library `@fwrlines/swatch` here https://github.com/fwrlines/swatch/issues
 + Report issues regarding the docs (the code contained in this repo) here https://github.com/fwrlines/swatch-docs/issues
 + Send an email to a@fwrlines.com if you have a general message
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Your contributions are welcome.
 
@@ -25,35 +29,27 @@ Your contributions are welcome.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator. It is hosted on [Vercel](https://vercel.com) and can be seen [here](https://swatch.dev)
 
-### Installation
+### Features
 
-```
-$ npm i
-```
+#### What is it made with?
 
-### Local Development
+[![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim)
 
-```
-$ npm run start
-```
+#### Github License
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-### Build
+#### Maintainance?
 
-```
-$ npm run build
-```
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/fwrlines/swatch/graphs/commit-activity)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+#### Docs issues
 
-### Deployment
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/fwrlines/swatch-docs/issues)
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true npm run deploy
-```
+#### What is it made with?
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[![made-with-NVIM](https://img.shields.io/badge/Made%20with-NVIM-1f425f.svg)](https://github.com/neovim/neovim)
 
 # Credits
 
