@@ -1,7 +1,14 @@
 ---
 slug: api-reference 
-title: APIReference
+title: API Reference
 ---
+
+:::note
+Before starting, please note that (as per [the W3C spec](https://www.w3.org/TR/css-variables-1/)), the scope of a CSS4 variable is as follows :
++ A CSS4 variable defined on a DOM node applies to this DOM node...
++ ... as well as all of its children tree
++ ... as well as all the [Shadow DOM](ihttps://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) trees in the children tree
+:::
 
 ## Default colors
 
@@ -30,7 +37,7 @@ These are the colors of the color wheel.
 
 ### Modal colors
 
-Modal colors are a set of colors that represent state.
+Modal colors are a colors that represent state.
 
 | Main variable | Light variant | Dark variant | Contrast color | 
 | :-------- | :---------- | :----------- | :----------- | 
@@ -48,6 +55,22 @@ Modal colors are a set of colors that represent state.
 | --google <span className='y-google b-y'>&#8193;</span> | --light-google <span className='y-google b-light-y'>&#8193;</span> | --dark-google <span className='y-google b-dark-y'>&#8193;</span> | --on-google <span className='y-google b-on-y'>&#8193;</span> | 
 
 
+### Theme-colors
+
+| Main variable | Light variant | Dark variant | Contrast color | 
+| :-------- | :---------- | :----------- | :----------- | 
+| --primary <span className='y-primary b-y'>&#8193;</span> | --light-primary <span className='y-primary b-light-y'>&#8193;</span> | --dark-primary <span className='y-primary b-dark-y'>&#8193;</span> | --on-primary <span className='y-primary b-on-y'>&#8193;</span> | 
+| --secondary <span className='y-secondary b-y'>&#8193;</span> | --light-secondary <span className='y-secondary b-light-y'>&#8193;</span> | --dark-secondary <span className='y-secondary b-dark-y'>&#8193;</span> | --on-secondary <span className='y-secondary b-on-y'>&#8193;</span> | 
+| --accent1 <span className='y-accent1 b-y'>&#8193;</span> | --light-accent1 <span className='y-accent1 b-light-y'>&#8193;</span> | --dark-accent1 <span className='y-accent1 b-dark-y'>&#8193;</span> | --on-accent1 <span className='y-accent1 b-on-y'>&#8193;</span> | 
+| --accent2 <span className='y-accent2 b-y'>&#8193;</span> | --light-accent2 <span className='y-accent2 b-light-y'>&#8193;</span> | --dark-accent2 <span className='y-accent2 b-dark-y'>&#8193;</span> | --on-accent2 <span className='y-accent2 b-on-y'>&#8193;</span> | 
+| --accent3 <span className='y-accent3 b-y'>&#8193;</span> | --light-accent3 <span className='y-accent3 b-light-y'>&#8193;</span> | --dark-accent3 <span className='y-accent3 b-dark-y'>&#8193;</span> | --on-accent3 <span className='y-accent3 b-on-y'>&#8193;</span> | 
+
+<!--
+:::note
+Accent colors can be used all together or in pair or even none at all depending your design needs.
+:::
+-->
+
 ### Ui colors
 
 UI colors are meant to be used by the User Interface or your page or application. These colors are provided in two variants, `light` (default, L) or `dark`(D). Read more about themes [here](./guides-themes-introduction).
@@ -62,32 +85,9 @@ UI colors are meant to be used by the User Interface or your page or application
 | --navlink <span className='y-navlink b-y'>&#8193;</span><span className='ui-dark y-navlink b-y'>&#8193;</span> | --light-navlink <span className='y-navlink b-light-y'>&#8193;</span><span className='ui-dark y-navlink b-light-y'>&#8193;</span> | --dark-navlink <span className='y-navlink b-dark-y'>&#8193;</span><span className='ui-dark y-navlink b-dark-y'>&#8193;</span> | --on-navlink <span className='y-navlink b-on-y'>&#8193;</span><span className='ui-dark y-navlink b-on-y'>&#8193;</span> | 
 | --paragraph <span className='y-paragraph b-y'>&#8193;</span><span className='ui-dark y-paragraph b-y'>&#8193;</span> | --light-paragraph <span className='y-paragraph b-light-y'>&#8193;</span><span className='ui-dark y-paragraph b-light-y'>&#8193;</span> | --dark-paragraph <span className='y-paragraph b-dark-y'>&#8193;</span><span className='ui-dark y-paragraph b-dark-y'>&#8193;</span> | --on-paragraph <span className='y-paragraph b-on-y'>&#8193;</span><span className='ui-dark y-paragraph b-on-y'>&#8193;</span> | 
 
+## Getters
 
-### Theme-colors
-
-| Main variable | Light variant | Dark variant | Contrast color | 
-| :-------- | :---------- | :----------- | :----------- | 
-| --primary <span className='y-primary b-y'>&#8193;</span> | --light-primary <span className='y-primary b-light-y'>&#8193;</span> | --dark-primary <span className='y-primary b-dark-y'>&#8193;</span> | --on-primary <span className='y-primary b-on-y'>&#8193;</span> | 
-| --secondary <span className='y-secondary b-y'>&#8193;</span> | --light-secondary <span className='y-secondary b-light-y'>&#8193;</span> | --dark-secondary <span className='y-secondary b-dark-y'>&#8193;</span> | --on-secondary <span className='y-secondary b-on-y'>&#8193;</span> | 
-| --accent1 <span className='y-accent1 b-y'>&#8193;</span> | --light-accent1 <span className='y-accent1 b-light-y'>&#8193;</span> | --dark-accent1 <span className='y-accent1 b-dark-y'>&#8193;</span> | --on-accent1 <span className='y-accent1 b-on-y'>&#8193;</span> | 
-| --accent2 <span className='y-accent2 b-y'>&#8193;</span> | --light-accent2 <span className='y-accent2 b-light-y'>&#8193;</span> | --dark-accent2 <span className='y-accent2 b-dark-y'>&#8193;</span> | --on-accent2 <span className='y-accent2 b-on-y'>&#8193;</span> | 
-| --accent3 <span className='y-accent3 b-y'>&#8193;</span> | --light-accent3 <span className='y-accent3 b-light-y'>&#8193;</span> | --dark-accent3 <span className='y-accent3 b-dark-y'>&#8193;</span> | --on-accent3 <span className='y-accent3 b-on-y'>&#8193;</span> | 
-
-:::note
-Accent colors can be used all together or in pair or even none at all depending your design needs.
-:::
-
-
-### Theme changer
-
-| Setter | Description |
-| :----  | :-------    |
-| `ui-dark` | Setter for the parent element (i.e body) |
-| `ui-iceberg` | Setter for the parent element (i.e body) |
-
-:::note 
-This setter is designed to be used on the parent element to change the color scheme of the document but depending on your needs you can use them on any part of your code/components code.
-:::
+Getters are CSS classes that take a locally-set CSS4 variable and apply it as a particular property (or set of properties) to a DOM node.
 
 ### Getters 
 
@@ -101,6 +101,22 @@ This setter is designed to be used on the parent element to change the color sch
 :::note 
 We currently have `b` & `c` as Getters for simplicity of the library for you but depends on the needs of our users we might add more getters in the future. If you think you need more getters please contact us and explain your situation. We will be happy to hear form you and also know your needs to find a solution for them. 
 :::
+
+## Setters (WORK IN PROGRESS)
+
+### Theme changer
+
+| Setter | Description |
+| :----  | :-------    |
+| `ui-dark` | Setter for the parent element (i.e body) |
+| `ui-iceberg` | Setter for the parent element (i.e body) |
+
+:::note 
+These are two special setters that apply ALL of the ui colors to the local DOM node scope. This means if you apply this class to `<body>`, all of your app will inherit the theme !
+:::
+
+## Mixins (WORK IN PROGRESS)
+
 ### Mixins of each part of the library
 
 If you rather to input one group of Swatch library variables to your own library simply just add the related input code from table below into your own SCSS library.
