@@ -18,7 +18,7 @@ Next you will find the instructions to install the precompiled and minified vers
 
 This is the simplest way to have the library running. 
 
-Just put the line below inside the `<head>` tag of your html template.
+Just put this line below inside the `<head>` tag of your html template.
 ```html title='index.html'
 <link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/main.min.css">
 ```
