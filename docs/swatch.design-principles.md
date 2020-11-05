@@ -11,7 +11,7 @@ Swatch is deeply inspired by the [Don't Repeat Yourself](https://en.wikipedia.or
 
 For instance, Bootstrap and Semantic-UI, two of the most popular biggest component libraries on the web, create _individual_ color classes for _each_ component. This means, if there are 10 colors in the set, and 12 components in the library, 120 (10 x 12) classes are written in CSS (think `.btn-red, .btn-green, .popup-red`, with 120 classes in total...). This is not only extremely unefficient, but incredibly hard to maintain and to evolve. 
 
-We believe developers must save time and effort and must not be locked-in in an antiquated, verbose way of doing things.
+We believe developers must save time and effort and must not be locked-in in an antiquated, verbose and repetitive way of doing things.
 
 ## Stability over features
 
@@ -32,7 +32,7 @@ Swatch is currently in beta. There might be exceptionally _minor_ changes to the
 
 ## Framework-agnostic
 
-Swatch does not depend on any library or framework. 
+Swatch is CSS-only code and does not depend on any library or framework. 
 
 Therefore, you can use it freely in any front-end projects. This means, it is compatible with bare-bones html, as it is with any front-end framework or templating engine. 
 

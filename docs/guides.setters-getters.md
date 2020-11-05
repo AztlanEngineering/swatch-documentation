@@ -6,11 +6,11 @@ title: Setters, Getters & Scope
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Below, you will learn about the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, that we had when we came up with this solution for coloring and theming. 
+Below, you will learn the rationale of combining CSS variables with the Setter and Getter pattern. We will try to mirror our thinking process, the reflexion we had along with the design of this solution. 
 
 The next sections of the Guides will be decidated to a more practical approach, where you will learn about the common usage of this library, whether its block coloring, component-based coloring or global theming. In contrast, this section has a more abstract and theoretical focus.
 
-We greatly invite you to read this section so that you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
+We greatly invite you to read this section so you have a better abstract understanding of the workings of Swatch. This will help you make the most out of it, and will maybe even inspire you to come with additional solutions and patterns !
 
 ## The problem : Coloring components imply exponential CSS classes
 
@@ -45,7 +45,7 @@ If you wish to make a block with a blue background, your code might look like th
   </TabItem>
 </Tabs>
 
-The `div` element will appear with the css `background:#05668D`. Pretty simple and basic.
+The `div` element will appear styled with the CSS property and value couple `background:#05668D`. Pretty basic.
 
 And if you wish to use the same color for another element, let's say a paragraph of text, you would have to do :
 
@@ -118,8 +118,8 @@ Now, if we wish to introduce a second color, say red, we would have something mo
 Here, we have 4 classes in total (2 blocks x 2 colors). If we had 12 colors, we would need 2 x 12 = 24 classes to express this logic. If we had also 10 blocks to style, we would need 10 x 12 = 120 css classes to write.
 
 **As you can infer, this approach is hardly scalable/maintainable because of the following caveats :**
-+ Changing a color requires to change ALL the occurences of the hex code in the source CSS:
 + We need to write classes for each Color x Component association, this rapidly becomes a burden to write and maintain.
++ Changing a color requires to change ALL the occurences of the hex code in the source CSS:
 
 ### Easier maintainance using preprocessor variables
 
@@ -167,8 +167,8 @@ $red:#DF1F00!default; /* Red */
 </Tabs>
 
 **This approach has the following caveats :**
-+ The compiled CSS resolve the variables to their values, meaning if you don't have access to the source code or are not willing to dive into it to recompile it, changing them will be time consuming, and you would have to do it again every time the source changes. 
 + This approach doesn't solve the need to write classes for each Color x Component association, so we would end up with the same amount of Components x Colors classes.
++ The compiled CSS resolve the variables to their values, meaning if you don't have access to the source code or are not willing to dive into it to recompile it, changing them will be time consuming, and you would have to do it again every time the source changes. 
 
 ### Introducing CSS Variables. Easier to debug/maintain but doesn't solve the problem.
 

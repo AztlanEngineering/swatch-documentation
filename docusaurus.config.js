@@ -44,7 +44,7 @@ module.exports = {
             },
 	          {
 	             label:'API Reference',
-	             to   :'docs/apireference',
+	             to   :'docs/api-reference',
 	          }
           ],
         },
