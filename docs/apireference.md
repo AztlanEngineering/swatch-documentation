@@ -94,12 +94,15 @@ Getters are CSS classes that take a locally-set CSS4 variable and apply it as a 
 | Main variable | Light variant | Dark variant | Contrast color | 
 | :-------- | :---------- | :----------- | :----------- | 
 | b-x <span className='x-green b-x'>&#8193;</span> | b-light-x <span className='x-green b-light-x'>&#8193;</span> | b-dark-x <span className='x-green b-dark-x'>&#8193;</span> | b-on-x <span className='x-green b-on-x'>&#8193;</span> | 
-| c-x <span className='x-blue c-x'>test</span> | c-light-x <span className='x-blue c-light-x'>test</span> | c-dark-x <span className='x-blue c-dark-x'>test</span> | c-on-x <span className='x-blue c-on-x'>test</span> | 
 | b-y <span className='y-red b-y'>&#8193;</span> | b-light-y <span className='y-red b-light-y'>&#8193;</span> | b-dark-y <span className='y-red b-dark-y'>&#8193;</span> | b-on-y <span className='y-red b-on-y'>&#8193;</span> | 
+| c-x <span className='x-blue c-x'>test</span> | c-light-x <span className='x-blue c-light-x'>test</span> | c-dark-x <span className='x-blue c-dark-x'>test</span> | c-on-x <span className='x-blue c-on-x'>test</span> | 
 | c-y <span className='y-azure c-y'>test</span> | c-light-y <span className='y-azure c-light-y'>test</span> | c-dark-y <span className='y-azure c-dark-y'>test</span> | c-on-y <span className='y-azure c-on-y'>test</span> | 
 
 :::note 
-We currently have `b` & `c` as Getters for simplicity of the library for you but depends on the needs of our users we might add more getters in the future. If you think you need more getters please contact us and explain your situation. We will be happy to hear form you and also know your needs to find a solution for them. 
+At the moment we have choosen to only provide stock getters for the CSS properties `color` and `background`. 
+Our rationale is that the users of this library would most often than not create their own getter classes.
+
+Nevertheless, we _might_ provide addional getter classes in future releases. If you believe additional vanilla getter classes would benefit a common use case, please [raise an issue](./contribution-feedback).
 :::
 
 ## Setters (WORK IN PROGRESS)
