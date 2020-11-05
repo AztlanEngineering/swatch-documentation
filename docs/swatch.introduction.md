@@ -7,9 +7,9 @@ title: Introduction
 
 **Swatch is a CSS library that aims at solving theming using CSS4 variables and the setter/getter pattern.**
 
-In other words, Swatch is a CSS library that aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
+In other words, Swatch is library that aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
 
-You can use this library to take care of **all** the coloring needs of your html, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
+You can use Swatch to take care of **all** the coloring needs of your html, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
 
 And the best part is ... Swatch comes as a **lightweight bundle (only 3kb)**, is **framework-agnostic** (it does not make assumptions about which framework you're using, whether it's a React/Vue/[Name here] application or just a simple `.html` file) and is **entirely customizable**.
 
@@ -25,12 +25,12 @@ You are probably thinking : _Since CSS is not an object-oriented language, how c
 
 The answer is this library is based on only the _idea_ of the _setter and getter pattern_, and is an _adaptation of it_. 
 
-The aim of these docs is to explain in detail how this pattern can be use extremely efficiently to solve your coloring needs, so don't worry if you this explanation is not enough. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
+The aim of these docs is to explain in detail how this pattern can be used extremely efficiently to solve your coloring needs, so don't worry if you think this explanation is not enough. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
 
 ## Who is this library for ?
 
 The Swatch CSS library is designed for **developers who have medium to advanced experience in CSS and HTML**. This library is meant for you if :
-+ You have dreamt of a simple, code-efficient way to apply coloring to your components and pages, whether they are web-components, React components, or simple html pages.
++ You have felt the need for a simple, code-efficient way to apply coloring to your components and pages, whether they are web-components, React components, or simple html pages.
 + You have failed to find extensible, satisfactory solutions in the mainstream existing libraries.
 + You have a bit of experience in object-oriented programming so the _Swatch way of doing things_ will feel more natural to you.
 + You are interested in cutting-edge web design and you have already been looking at CSS4 variables as way to make your stylesheets more efficient.
@@ -47,17 +47,9 @@ This library might seem a complex way to solve a simple problem (coloring). Ther
 
 Here is a list of problems Swatch will prevent you from having. If you recognize some of this examples, you might find this library interesting to your use-case. 
 
-### 
+1.
+2.
+3.
+...
 
 ### Having to take time and effort to write the classes for all color/component combinations -> One class is enough thanks to the setter/getter pattern
-
-
-
-<!----
-
---- 
-
--->
-
-
-

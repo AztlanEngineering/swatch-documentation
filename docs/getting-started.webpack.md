@@ -59,6 +59,10 @@ module.exports={
 :::
 :::tip
 The `includePaths` option will give your SCSS `@import` and `@use` directives module resolution from the `node_modules` directory (this substitutes to writing unreliable relative paths).
+
+
+
+## needs more clearifying whether they need to do some thing about it of just copy the line "include ..."
 :::
 
 

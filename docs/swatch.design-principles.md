@@ -59,12 +59,3 @@ We believe the exchange of ideas allowed by open-source programming is an enable
 Customization is a feature we offer our advanced users. We want you to have infinite possibilities of customization and theming.
 
 Visit the [Advanced Guides > Custom Palette](./advanced-custom-palette) to learn more.
-
-<!----
-
---- 
-
--->
-
-
-

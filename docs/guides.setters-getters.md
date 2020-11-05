@@ -119,7 +119,7 @@ Here, we have 4 classes in total (2 blocks x 2 colors). If we had 12 colors, we 
 
 **As you can infer, this approach is hardly scalable/maintainable because of the following caveats :**
 + Changing a color requires to change ALL the occurences of the hex code in the source CSS:
-+ We need to write classes for each Color x Component association, this rapidly becomes a burden to write and maintain.
++ We need to write classes for 'each Color x Components' association, this rapidly becomes a burden to write and maintain.
 
 ### Easier maintainance using preprocessor variables
 
@@ -168,7 +168,7 @@ $red:#DF1F00!default; /* Red */
 
 **This approach has the following caveats :**
 + The compiled CSS resolve the variables to their values, meaning if you don't have access to the source code or are not willing to dive into it to recompile it, changing them will be time consuming, and you would have to do it again every time the source changes. 
-+ This approach doesn't solve the need to write classes for each Color x Component association, so we would end up with the same amount of Components x Colors classes.
++ This approach doesn't solve the need to write classes for 'each Color x Components' association, so we would end up with the same amount of Components x Colors classes.
 
 ### Introducing CSS Variables. Easier to debug/maintain but doesn't solve the problem.
 
@@ -217,9 +217,9 @@ With CSS4 variables, we would write the following code to achieve the same funct
   </TabItem>
 </Tabs>
 
-This approach is very similar to the preprocessor approach, and only improves on it by making the variable available to the broswer (and not having to compile). Concretely, it allows you to play with varaibles at the browser level (work on inheritance, scope, or simply debug it).
+This approach is very similar to the preprocessor approach, and only improves on it by making the variables available to the broswer (and not having to compile). Concretely, it allows you to play with varaibles at the browser level (work on inheritance, scope, or simply debug it).
 
-**Subsequently, it still doesnt solve the problem of having a huge number of Colors x Components.**
+**Subsequently, it still doesn't solve the problem of having a huge number of Colors x Components.**
 
 :::note
 In the CSS inspector of your browser, you can see the variables available in the page and modify/debug them.
