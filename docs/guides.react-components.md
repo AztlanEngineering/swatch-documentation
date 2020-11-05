@@ -5,8 +5,9 @@ title: React components
 
 There are different ways you can use Swatch to theme your React components. If you are using an other front-end framework than React, it is likely you can still find in this guide a pattern useful for you.
 
-Feel free to adapt the below pattern depending on whether :
-  + You use CSS modules or a separate CSS file for each component, CSS in JS, basically you write CSS separately from HTML
+We invite you to adapt the below pattern to your own / your company coding style, i.e. :
+  + Whether you use separate CSS file for each component or CSS modules
+  + Whether you use CSS in JS (we don't judge you)
   + You prefer style properties (you write your CSS Inline)
 
 <!--
