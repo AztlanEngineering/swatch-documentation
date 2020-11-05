@@ -1,6 +1,6 @@
 module.exports = {
   title           :'Swatch',
-  tagline         :'A powerful, lightweight scss library based on css4 vars and the mutator pattern.',
+  tagline         :'A powerful, lightweight scss coloring and theming library based on css4 vars and the setter/getter pattern.',
   url             :'https://vercel.com/fwrlines/swatch-docs',
   baseUrl         :'/',
   favicon         :'img/favicon.ico',
