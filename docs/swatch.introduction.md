@@ -23,9 +23,12 @@ The Setter and Getter pattern is a programming _pattern_ that comes from the wor
 
 You are probably thinking : _Since CSS is not an object-oriented language, how can this library use this pattern ?_
 
-The answer is this library is based on only the _idea_ of the _setter and getter pattern_, and is an _adaptation of it_. 
+Swatch relies on an interpretation of the Setter/Getter pattern applied to the DOM:
++ The objects are the DOM nodes
++ The setters are helper CSS classes that set CSS4 variables to the scope of a DOM node
++ The getters are CSS classes that take scope CSS4 variables to apply them as a CSS property to a DOM node in the scope. 
 
-The aim of these docs is to explain in detail how this pattern can be use extremely efficiently to solve your coloring needs, so don't worry if you this explanation is not enough. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
+The aim of these docs is to explain in detail how this pattern can be use extremely efficiently to solve your coloring needs, so don't worry if you this explanation is not enough at the moment. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
 
 ## Who is this library for ?
 
@@ -43,6 +46,11 @@ If you wish to customize Swatch, you need to know SCSS as well. You can find fur
 :::caution If you are a beginner developper
 This library might seem a complex way to solve a simple problem (coloring). There are easier, altough much less code-efficient, solutions to this problem we recommend you to consider.
 :::
+
+## Next ...
+
+You can either read the [Design Principles](./design-principles) of the library or directly [install the library in one minute](./getting-started-quick-install).
+<!---
 ## What problems does swatch prevent ?
 
 Here is a list of problems Swatch will prevent you from having. If you recognize some of this examples, you might find this library interesting to your use-case. 
@@ -53,11 +61,11 @@ Here is a list of problems Swatch will prevent you from having. If you recognize
 
 
 
-<!----
 
 --- 
 
 -->
+
 
 
 
