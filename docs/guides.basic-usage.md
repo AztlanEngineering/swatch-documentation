@@ -91,7 +91,7 @@ CSS4 variables are unherited through the DOM (And the Shadow DOM). This means, y
 
 Here, we'll try to be smarter, and apply a background to an element with text color contrasting naturally to it (for instance, we'll write black text on a white background and white text on a blue background).
 
-Swatch allows you  to do this out of the box.
+Swatch allows you to do this out of the box.
 
 
 ```jsx live
@@ -124,12 +124,14 @@ If we want to call this getter `d`, simply have to write the following code
   <TabItem value="CSS">
 
 ```css
+/* For x Setter */
 .d-x {
   border:1px solid var(--x);
   color:var(--x);
   background:transparent;
 }
 
+/* For y Setter */
 .d-y {
   border:1px solid var(--x);
   color:var(--x);

@@ -57,7 +57,7 @@ require('@fwrlines/swatch/main.min.css')
 
 ## Next step
 
-Now you've installed the library, you can test if it is successfully installed by writing in your html:
+Now you've installed the library, you can test it is successfully installed by writing in your html:
 
 ```html live
 <div class='y-green b-y'>I am text in a green box.</div>
