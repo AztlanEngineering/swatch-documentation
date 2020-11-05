@@ -57,7 +57,7 @@ module.exports={
 :::caution 
 `sass-loader` must be the last loader included for scss files. This is because the loaders are executed in reverse order.
 :::
-:::tip
+:::info
 The `includePaths` option will give your SCSS `@import` and `@use` directives module resolution from the `node_modules` directory (this substitutes to writing unreliable relative paths).
 :::
 

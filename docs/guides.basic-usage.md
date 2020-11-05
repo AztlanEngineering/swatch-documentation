@@ -30,10 +30,10 @@ All of the setters set 4 variables (normal, light, dark and contrast 'on color')
 
 | Setter CSS class |<div style={{ width:'17em' }}>Variables Set</div> | Note |
 | :------| :---------- | :------|
-| ` .x-{color}` | `--x:var(--{color})`<br/>`--light-x:var(--{color})`<br/>`--dark-x:var(--dark-{color})`<br/>`--on-x:var(--on-color)`| |
-| ` .y-{color}` | `--y:var(--{color})`<br/>`--light-y:var(--{color})`<br/>`--dark-y:var(--dark-{color})`<br/>`--on-y:var(--on-color)`| |
-| ` .xh-{color}` | `--x:var(--{color})`<br/>`--light-x:var(--{color})`<br/>`--dark-x:var(--dark-{color})`<br/>`--on-x:var(--on-color)`| Same as `.x-{color}` but only applies variables on hover and focus |
-| ` .yh-{color}` | `--y:var(--{color})`<br/>`--light-y:var(--{color})`<br/>`--dark-y:var(--dark-{color})`<br/>`--on-y:var(--on-color)`| Same as `.y-{color}` but only applies variables on hover and focus |
+| ` .x-{color}` | `--x:var(--{color})`<br/>`--light-x:var(--{color})`<br/>`--dark-x:var(--dark-{color})`<br/>`--on-x:var(--on-{color})`| |
+| ` .y-{color}` | `--y:var(--{color})`<br/>`--light-y:var(--{color})`<br/>`--dark-y:var(--dark-{color})`<br/>`--on-y:var(--on-{color})`| |
+| ` .xh-{color}` | `--x:var(--{color})`<br/>`--light-x:var(--{color})`<br/>`--dark-x:var(--dark-{color})`<br/>`--on-x:var(--on-{color})`| Same as `.x-{color}` but only applies variables on hover and focus |
+| ` .yh-{color}` | `--y:var(--{color})`<br/>`--light-y:var(--{color})`<br/>`--dark-y:var(--dark-{color})`<br/>`--on-y:var(--on-{color})`| Same as `.y-{color}` but only applies variables on hover and focus |
 
 
 ## Getters

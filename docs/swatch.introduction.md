@@ -9,9 +9,9 @@ title: Introduction
 
 In other words, Swatch is a CSS library that aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
 
-You can use this library to take care of **all** the coloring needs of your html, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
+You can use this library to take care of **all** the coloring needs of your HTML, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
 
-And the best part is ... Swatch comes as a **lightweight bundle (only 3kb)**, is **framework-agnostic** (it does not make assumptions about which framework you're using, whether it's a React/Vue/[Name here] application or just a simple `.html` file) and is **entirely customizable**.
+And the best part is ... Swatch comes as a **lightweight CSS bundle (only 3kb)**, and by being a CSS-only library, it is **framework-agnostic** (it does not make assumptions about which framework you're using, whether it's a React/Vue/[Name here] application or just a simple `.html` file). Also Swatch is **entirely customizable**.
 
 
 The source code of this library is SCSS and can also be imported as such in your projects, to maximize customization (for instance, to provide your own set of colors). 
