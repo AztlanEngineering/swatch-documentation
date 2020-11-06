@@ -3,6 +3,7 @@ module.exports = {
     "swatch":[
       'swatch.introduction',
       'swatch.design-principles',
+      'swatch.an-example',
       'swatch.contribution-feedback'
     ],
     'Getting Started':[
