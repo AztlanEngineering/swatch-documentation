@@ -95,7 +95,7 @@ Swatch allows you  to do this out of the box.
 
 
 ```jsx live
-<div style='font-size:2em;'>
+<div style={{'font-size':'2em'}}>
   <button class='x-white b-x c-on-x'>White button</button>
   <button class='x-blue b-x c-on-x'>Blue button</button>
 </div>
