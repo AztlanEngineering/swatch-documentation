@@ -1,6 +1,6 @@
 ---
 slug: guides-themes-introduction
-title: A Primer on Swatch Themes
+title: Introduction to theming with Swatch
 ---
 
 Now, you know how to use setters and getters to apply colors to your html blocks or components. But how can we leverage the power of Swatch to apply themes at the application level ?
@@ -33,23 +33,14 @@ The following example should give you a better idea of the theme api.
 ```jsx live
 function AppWithDarkThemeToggle() {
   
-  const availableThemes = [
-    'ui-light',
-    'ui-dark'
-  ]
+  const [darkThemeEnabled, setDarkThemeEnabled] = useState(false)
 
-  const [currentTheme, setCurrentTheme] = useState(availableThemes[0])
-
-  const toggleCurrentTheme = () => {
-    const currentThemeIndex = availableThemes.findIndex(e => e === currentTheme)
-    const nextThemeIndex = (currentThemeIndex + 1) % availableThemes.length
-    setCurrentTheme(availableThemes[nextThemeIndex])
-  }
+  const toggleDarkTheme = () => setDarkThemeEnabled(!darkThemeEnabled)
 
   return (
-    <div className={`${currentTheme} y-background b-y`} style={{ padding:'1em' }}>
+    <div className={`${darkThemeEnabled ? 'ui-dark' : 'ui-light'} y-background b-y`} style={{ padding:'1em' }}>
 
-    <button onClick={ toggleCurrentTheme }>Click me to change theme !</button>
+    <button onClick={ toggleDarkTheme }>Click me to enable { darkThemeEnabled ? 'dark ':'light ' }theme !</button>
       <h1 className='x-heading c-x'>Some news article</h1>
       <p className='x-subtitle c-x' style={{ fontSize:'2em' }}>A detailed reason for you to read the article </p>
       <p className='x-metadata c-x'>Published on August 10</p>

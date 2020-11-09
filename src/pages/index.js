@@ -9,29 +9,56 @@ import GitHubButton from 'react-github-btn'
 
 const features = [
   {
-    title      :<>Highly customizable</>,
-    imageUrl   :'img/customizable-logo.svg',
+    title      :<>Theme Components and Apps</>,
+    imageUrl   :'img/color-palette.png',
     description:(
       <>
-	      Swatch is a highly customizable css color library and is a free and open source project created using Sass.
+        Swatch provides you with more than 20 color variables to theme your components and apps.
       </>
     ),
   },
   {
-    title      :<>Great advantages</>,
-    imageUrl   :'img/undraw_docusaurus_tree.svg',
+    title      :<>A modern pattern using CSS4 variables</>,
+    imageUrl   :'img/project.png',
     description:(
       <>
-	      The most important thing you need to know about Color-swatch is that it uses the getter/setter mutation design pattern. if you don't know the mutator pattern don't worry we will cover it.
+        By applying the Setter/Getter pattern to CSS, Swatch allows you to code in a minimal amount of code any of your components. Say goodbye the prehistoric way of writing one CSS Class x Color x Component. One class per component is enough.
       </>
     ),
   },
   {
-    title      :<>Easy to install</>,
-    imageUrl   :'img/undraw_docusaurus_react.svg',
+    title      :<>CSS Only / Framework Agnostic</>,
+    imageUrl   :'img/file.png',
     description:(
       <>
-	      There is a small 4 step installation instruction to doand then you have the Color-swatch ready for use.
+        Swatch does not depend on any other library. While it is written in SCSS, its compiled CSS can be included as-is in any HTML or templating engine. Think bare-bones HTML, React, Vue, Angular, Django, Laravel, web components.
+      </>
+    ),
+  },
+  {
+    title      :<>All your coloring needs in a 2.5K gzip</>,
+    imageUrl   :'img/chick.png',
+    description:(
+      <>
+        2.5 Kb of gzip code (18Kb uncompressed) : this is the only code you will ever need to take care of theming and coloring in your apps.
+      </>
+    ),
+  },
+  {
+    title      :<>Customizable colors, extendable themes</>,
+    imageUrl   :'img/painting.png',
+    description:(
+      <>
+        Your own custom color palette ? A custom solarized theme ? A custom theme for your white-label client ? All can be simply done by forking or making your own version of your library.
+      </>
+    ),
+  },
+  {
+    title      :<>The peace of mind you've been waiting for</>,
+    imageUrl   :'img/relaxing.png',
+    description:(
+      <>
+        Maintainable, easy-to-read, code, a stable and efficient API. Nothing else to install and a library you can use in ANY of your web projects. Theming and coloring are finally made easy and efficient. Is there anything else you need >
       </>
     ),
   },
@@ -67,7 +94,7 @@ function Home() {
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <p className="hero__subtitle"><strong>{siteConfig.tagline}</strong></p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
@@ -78,7 +105,9 @@ function Home() {
             >
               Get Started
             </Link>
+          </div>
             <div style={{ margin: '50px 60px' }}>
+              {/*
               <GitHubButton
                 href="https://github.com/fwrlines/swatch"
                 data-color-scheme="no-preference: light; light: light; dark: light;"
@@ -88,12 +117,12 @@ function Home() {
               >
 Star
               </GitHubButton>
+              */}
             </div>
-          </div>
         </div>
       </header>
       <main>
-        {/*features && features.length && (
+        {features && features.length && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
@@ -106,8 +135,23 @@ Star
               </div>
             </div>
           </section>
-        )*/}
+        )}
       </main>
+      <div className={classnames('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <div className={styles.buttons}>
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted
+              )}
+              to={useBaseUrl('docs/introduction')}
+            >
+              Explore the library now
+            </Link>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

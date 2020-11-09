@@ -16,6 +16,8 @@ Next you will find the instructions to install the precompiled and minified vers
 
 ## Option 1 : One-minute install
 
+**We will simply add the library css as a link to your html.**
+
 This is the simplest way to have the library running. 
 
 Just put this line below inside the `<head>` tag of your html template.
@@ -23,14 +25,31 @@ Just put this line below inside the `<head>` tag of your html template.
 <link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/main.min.css">
 ```
 
-## Option 2 : Bundle minified css from npm
+## Option 2 : Add to create-react-app
 
-If you wish to import this library as a module, you can install it from NPM using :
+**Simply**
+
 ```bash
 npm i @fwrlines/swatch
 ```
 
-And then simply, in your javascript (provided `css` files are understood by your build system)
+And in your main App file (or wherever you like).
+
+```js
+import '@fwrlines/swatch/main.min.css'
+```
+
+**As simple as that. Now you're good to go !**
+
+## Option 3 : Bundle minified css from npm
+
+If you are using a build system (webpack, rollup) and wish to import this library as a module, you can install it from NPM using :
+
+```bash
+npm i @fwrlines/swatch
+```
+
+And then simply, in your javascript (provided `css` files are understood by your build system).
 
 
 <Tabs
@@ -55,7 +74,7 @@ require('@fwrlines/swatch/main.min.css')
   </TabItem>
 </Tabs>
 
-## Next step
+## Now test it works !
 
 Now you've installed the library, you can test it is successfully installed by writing in your html
 

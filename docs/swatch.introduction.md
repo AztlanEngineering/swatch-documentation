@@ -11,7 +11,7 @@ In other words, Swatch aims at providing color schemes to HTML pages and compone
 
 You can use this library to take care of **all** the coloring needs of your HTML, from global dynamic themes to component-level coloring, on elements like buttons, text, form inputs, etc...
 
-And the best part is ... Swatch comes as a **lightweight CSS bundle (only 3kb)**, and by being a CSS-only library, it is **framework-agnostic** (it does not make assumptions about which framework you're using, whether it's a React/Vue/[Name here] application or just a simple `.html` file). Also Swatch is **entirely customizable**.
+And the best part is ... Swatch comes as a **lightweight CSS bundle (only 3kb)**, and by being a CSS-only library, it is **framework-agnostic** (it does not make assumptions about which framework you're using, whether it's a React/Vue/[Name here] application or just a simple .html file). Also Swatch is **entirely customizable**.
 
 
 The source code of this library is SCSS and can also be imported as such in your projects, to maximize customization (for instance, to provide your own set of colors). 
@@ -23,10 +23,9 @@ The source code of this library is SCSS and can also be imported as such in your
 | Feature | Swatch | Styled Components | Bootstrap | Sematic UI | Material UI |
 | :----- | :----- | :---- | :----- | :----- | :----- |
 | Colors Variables in compiled output | <span class='x-green c-x'><strong>CSS4 Variables</strong></span> | <span class='x-warning c-x'>CSS-in JS only</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-warning c-x'>CSS-in-JS only</span> |
-| CSS Code efficiency to theme components | <span class='x-green c-x'><strong>Linear (CSS Only)</strong></span> | <span class='x-warning c-x'>Linear (using CSS-in-JS)</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-warning c-x'>Linear (using CSS-in-JS)</span> |
+| CSS Code efficiency to theme components | <span class='x-green c-x'><strong>Linear (CSS Only)</strong></span> | <span class='x-warning c-x'>Linear (using JS variables)</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-warning c-x'>Linear (using JS variables)</span> |
 | Can be used without Javascript ? | <span class='x-green c-x'><strong>Yes</strong></span> | <span class='x-red c-x'>No</span> | <span class='x-green c-x'><strong>Yes</strong></span> |<span class='x-green c-x'><strong>Yes</strong></span> |<span class='x-red c-x'>No</span> |
 | Painless dark theme | <span class='x-green c-x'><strong>Yes</strong></span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> |
-
 
 :::caution (*)Warning
 Swatch focus is only to provide coloring and theming, while Bootstrap, Semantic-ui, Material-UI provide an opinionated set of components on top of it. <ins>This means if you are looking for a library that provide already-made components, Swatch is not the right library for you.</ins> 
@@ -48,7 +47,7 @@ The Swatch CSS library is designed for **developers who have medium to advanced 
 **Do not use this library if :**
 + ❌ If you are a beginner front-end developper, this library might seem a complex way to solve a simple problem (coloring). There are easier, altough much less code-efficient, solutions to this problem we recommend you to consider.
 + ❌ If you are using Bootstrap or Semantic-UI, these libraries already provide a hard-coded set of colors which is unfortunately incompatible with Swatch unless you wish to compile your own version of those libraries.
-+ ❌ If you are using CSS-in-JS (namely styled-components), you proabably have little use for CSS4 variables ([and have little respect for DOM specs anyway](https://gomakethings.com/whats-wrong-with-css-in-js/)).
++ ❌ If you are using CSS-in-JS (namely styled-components), you proabably have little use for CSS4 variables ([and have little respect for DOM specs anyway :) ](https://gomakethings.com/whats-wrong-with-css-in-js/)). Bear in mind the 'C' in 'CSS' means 'Cascading' and CSS-in-JS patterns are oblivious to this feature of the language.
 
 
 :::note

@@ -95,7 +95,7 @@ Swatch allows you  to do this out of the box.
 
 
 ```jsx live
-<div>
+<div style='font-size:2em;'>
   <button class='x-white b-x c-on-x'>White button</button>
   <button class='x-blue b-x c-on-x'>Blue button</button>
 </div>
@@ -104,6 +104,8 @@ Swatch allows you  to do this out of the box.
 
 
 ## Extending the base functionality with custom getters
+
+Once you've understood the principles of _setters_ and _getters_, it will become extremely easy for you to extend the functionality of this library by writing your own getters.
 
 ### A simple example
 

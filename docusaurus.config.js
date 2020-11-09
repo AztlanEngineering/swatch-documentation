@@ -1,6 +1,6 @@
 module.exports = {
   title           :'Swatch',
-  tagline         :'A powerful, lightweight scss coloring and theming library based on css4 vars and the setter/getter pattern.',
+  tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS4 vars and the Setter/Getter pattern.',
   url             :'https://vercel.com/fwrlines/swatch-docs',
   baseUrl         :'/',
   favicon         :'img/favicon.ico',
@@ -52,7 +52,7 @@ module.exports = {
           title:'Links',
           items:[
             {
-              label:'GitHub',
+              label:'Source code on GitHub',
               href :'https://github.com/fwrlines/swatch',
             },
           ],
@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} By fwrlines Coding Group.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg.`,
     },
   },
   presets:[
