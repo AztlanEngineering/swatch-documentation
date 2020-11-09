@@ -71,6 +71,10 @@ html {
 	margin: 0 auto;
 }
 
+.footer .container {
+  float:none;
+}
+
 .news {
 	width: 100%;
 	display: block;

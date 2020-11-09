@@ -88,10 +88,10 @@ function Home() {
   const {siteConfig = {}} = context
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`A code-efficient CSS4 Theming and Coloring Library`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+      <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle"><strong>{siteConfig.tagline}</strong></p>
@@ -137,7 +137,7 @@ Star
           </section>
         )}
       </main>
-      <div className={classnames('hero hero--primary', styles.heroBanner)}>
+      <div className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <div className={styles.buttons}>
             <Link
