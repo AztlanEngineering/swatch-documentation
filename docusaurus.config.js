@@ -24,7 +24,7 @@ module.exports = {
         {
           href    :'https://github.com/fwrlines/swatch',
           label   :'GitHub',
-          position:'right',
+          position:'left',
         },
       ],
     },
@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. Site made via Docusaurus documentation.`,
     },
   },
   presets:[
