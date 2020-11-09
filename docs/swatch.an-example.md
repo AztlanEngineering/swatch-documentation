@@ -37,7 +37,7 @@ function AppWithDarkThemeToggle() {
   return (
     <div className={`${darkThemeEnabled ? 'ui-dark' : 'ui-light'} y-background b-y`} style={{ padding:'1em' }}>
 
-    <button onClick={ toggleDarkTheme }>Click me to enable { darkThemeEnabled ? 'dark ':'light ' }theme !</button>
+    <button onClick={ toggleDarkTheme }>Click me to enable { darkThemeEnabled ? 'light ':'dark ' }theme !</button>
       <h1 className='x-heading c-x'>Some news article</h1>
       <p className='x-subtitle c-x' style={{ fontSize:'2em' }}>A detailed reason for you to read the article </p>
       <p className='x-metadata c-x'>Published on August 10</p>
