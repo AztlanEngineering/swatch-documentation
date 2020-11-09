@@ -39,7 +39,7 @@ Therefore, you can use it freely in any front-end projects. This means, it is co
 
 ## Minimal bundle size
 
-The gzip, minified version of this library is only 3.2kb. Not a byte more.
+The gzip, minified version of this library is only 2.5KB gzip (18KB uncompressed minified). Not a byte more.
  
 
 ## LTS (Long-time support)

@@ -36,11 +36,11 @@ const features = [
     ),
   },
   {
-    title      :<>All your coloring needs in a 2.5K gzip</>,
+    title      :<>All your coloring needs in a 2.5KB gzip</>,
     imageUrl   :'img/chick.png',
     description:(
       <>
-        2.5 Kb of gzip code (18Kb uncompressed) : this is the only code you will ever need to take care of theming and coloring in your apps.
+        2.5 KB of gzip code (18KB uncompressed) : this is the only code you will ever need to take care of theming and coloring in your apps.
       </>
     ),
   },
