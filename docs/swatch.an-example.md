@@ -18,7 +18,9 @@ This first example uses Swatch in the most simple way : html which consumes the 
       <h2 class='x-subtitle c-x'>A detailed reason for you to read the article </h2>
       <p class='x-metadata c-x'>Published on August 10</p>
       <p class='x-paragraph c-x'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla ligula vel mollis ultrices. Proin sodales faucibus sodales. Ut libero nisi, venenatis in neque interdum, ullamcorper scelerisque erat. Phasellus non lectus nisl. Quisque vel laoreet libero. Cras mi ante, efficitur a tincidunt ac, cursus at metus. Morbi porttitor magna non ipsum porttitor, vitae scelerisque arcu ullamcorper. Aenean non sapien vel leo aliquam dictum in in metus. In et elit mauris. Pellentesque ac pharetra erat. </p>
+      <div class='y-red b-dark-y c-on-y'>This div has a red background and the text color is automatically contrasted.</div>
       <div class='y-red b-y c-on-y'>This div has a red background and the text color is automatically contrasted.</div>
+      <div class='y-red b-light-y c-on-y'>This div has a red background and the text color is automatically contrasted.</div>
       <div class='y-blue b-y c-on-y'>This div has a blue background and the text color is automatically contrasted.</div>
     </div>
 ```
