@@ -13,7 +13,7 @@ const features = [
     imageUrl   :'img/color-palette.png',
     description:(
       <>
-        Swatch provides you with more than 20 color variables to theme your components and apps.
+        Swatch provides you with more than 20 CSS4 color swatches to theme your components and apps. Each Swatch is composed by a main color, a lighter shade, a darker shade, and a contrast color for text. This mean more than 80 different colors at your disposal.
       </>
     ),
   },
@@ -22,7 +22,7 @@ const features = [
     imageUrl   :'img/project.png',
     description:(
       <>
-        By applying the Setter/Getter pattern to CSS, Swatch allows you to code in a minimal amount of code any of your components. Say goodbye the prehistoric way of writing one CSS Class x Color x Component. One class per component is enough.
+        By applying the Setter/Getter pattern to CSS, Swatch allows you to theme in a minute any of your html blocks or components. Just write one CSS class per component. Say goodbye the prehistoric way of writing one CSS Class x every Color x Component. 
       </>
     ),
   },
@@ -54,11 +54,11 @@ const features = [
     ),
   },
   {
-    title      :<>The peace of mind you've been waiting for</>,
+    title      :<>Relax and don't worry about theming anymore.</>,
     imageUrl   :'img/relaxing.png',
     description:(
       <>
-        Maintainable, easy-to-read, code, a stable and efficient API. Nothing else to install and a library you can use in ANY of your web projects. Theming and coloring are finally made easy and efficient. Is there anything else you need >
+        Maintainable, easy-to-read, code, a stable and efficient API. Nothing else to install and a library you can use in ANY of your web projects. Theming and coloring are finally made easy and efficient.
       </>
     ),
   },

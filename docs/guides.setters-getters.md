@@ -347,7 +347,7 @@ Setters and Getters work by associating variables to a Scope.
 
 If we want to pursue the comparison with the Setter and Getter pattern in OOP :
 + The object is a DOM node
-+ The setters set variable to the scope of the DOM node (so, the DOM node can consume it, as well as its children)
++ The setters set variables to the scope of the DOM node (so, the DOM node can consume it, as well as its children)
 + The getters read the variables in the scope and apply it as styles to the same or a children node.
 
 :::tip
