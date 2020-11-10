@@ -40,7 +40,7 @@ const features = [
     imageUrl   :'img/chick.png',
     description:(
       <>
-        2.5 KB of gzip code (18KB uncompressed) : this is the only code you will ever need to take care of theming and coloring in your apps.
+        2.5 KB of gzip code (15KB uncompressed) : this is the only code you will ever need to take care of theming and coloring in your apps.
       </>
     ),
   },
