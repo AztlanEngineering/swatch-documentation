@@ -64,7 +64,7 @@ The `includePaths` option will give your SCSS `@import` and `@use` directives mo
 
 ## 3. Import into your scss file
 
-Copy the content of `node_modules/@fwrlines/swatch/custom.scss` into your `styles.scss` (or the name of your custom scss styles) file and replace
+Copy the content of `node_modules/@fwrlines/swatch/src/custom.scss` into your `styles.scss` (or the name of your custom scss styles) file and replace
 
 ```scss title="src/css/styles.scss"
 @use 'mixins';
@@ -74,8 +74,8 @@ Copy the content of `node_modules/@fwrlines/swatch/custom.scss` into your `style
 with
 
 ```scss title="src/css/styles.scss"
-@use '@fwrlines/swatch/mixins';
-@use '@fwrlines/swatch/vars';
+@use '@fwrlines/swatch/src/mixins';
+@use '@fwrlines/swatch/src/vars';
 ```
 
  Then, customize Swatch following [this guide](./advanced-custom-palette).

@@ -22,7 +22,7 @@ This is the simplest way to have the library running.
 
 Just put this line below inside the `<head>` tag of your html template.
 ```html title='index.html'
-<link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/main.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@fwrlines/swatch@latest/dist/main.min.css">
 ```
 
 ## Option 2 : Add to create-react-app
@@ -36,7 +36,7 @@ npm i @fwrlines/swatch
 And in your main App file (or wherever you like).
 
 ```js
-import '@fwrlines/swatch/main.min.css'
+import '@fwrlines/swatch/dist/main.min.css'
 ```
 
 **As simple as that. Now you're good to go !**
@@ -62,13 +62,13 @@ And then simply, in your javascript (provided `css` files are understood by your
   <TabItem value="ESM">
 
 ```js
-import '@fwrlines/swatch/main.min.css'
+import '@fwrlines/swatch/dist/main.min.css'
 ```
   </TabItem>
   <TabItem value="CommonJS">
 
 ```js
-require('@fwrlines/swatch/main.min.css')
+require('@fwrlines/swatch/dist/main.min.css')
 ```
 
   </TabItem>
