@@ -106,8 +106,11 @@ function Home() {
               Get Started
             </Link>
           </div>
-            <div style={{ margin: '50px 60px' }}>
+          <p style={{ marginTop:'2em', fontWeight:'bold' }}>
+        <a href="https://github.com/fwrlines/swatch" target='_blank'>See on Github</a>
+      </p>
               {/*
+            <div style={{ margin: '50px 60px' }}>
               <GitHubButton
                 href="https://github.com/fwrlines/swatch"
                 data-color-scheme="no-preference: light; light: light; dark: light;"
@@ -117,8 +120,8 @@ function Home() {
               >
 Star
               </GitHubButton>
-              */}
             </div>
+              */}
         </div>
       </header>
       <main>

@@ -71,7 +71,7 @@ module.exports = {
           ],
         },
       ],
-      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. This site is made using the quite helpful Docusaurus.`,
+      copyright:`Copyright © ${new Date().getFullYear()} By Adrian V and Ali Mg. This site is made using Docusaurus.`,
     },
   },
   presets:[
