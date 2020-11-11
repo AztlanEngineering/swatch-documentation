@@ -8,6 +8,11 @@ module.exports = {
   projectName     :'Swatch', // Usually your repo name.
   themes          :['@docusaurus/theme-live-codeblock'],
   themeConfig     :{
+    googleAnalytics:{
+      trackingID :'UA-182693414-1',
+      // Optional fields.
+      anonymizeIP:true, // Should IPs be anonymized?
+    },
     navbar:{
       title:'Swatch',
       logo :{
@@ -90,7 +95,7 @@ module.exports = {
         },
         theme:{
           customCss:[
-            require.resolve('@fwrlines/swatch/main.min.css'),
+            require.resolve('@fwrlines/swatch/dist/main.min.css'),
             require.resolve('./src/css/custom.css')
           ] 
         },

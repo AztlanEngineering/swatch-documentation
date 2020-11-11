@@ -89,7 +89,7 @@ function Home() {
   return (
     <Layout
       title={`A code-efficient CSS4 Theming and Coloring Library`}
-      description="Description will go into a meta tag in <head />"
+      description="Swatch is a lightweight, code efficient theming and coloring CSS library based on CSS4 variables and the Setter/Getter pattern."
     >
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
