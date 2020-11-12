@@ -5,7 +5,7 @@ title: Introduction
 
 ## What is Swatch ?
 
-**Swatch is a CSS library that aims at solving theming using CSS4 variables and the setter/getter pattern.**
+**Swatch is a CSS library that aims at solving theming using CSS variables and the setter/getter pattern.**
 
 In other words, Swatch aims at providing color schemes to HTML pages and components and does it in a code-efficient way. 
 
@@ -22,7 +22,7 @@ The source code of this library is SCSS and can also be imported as such in your
 
 | Feature | Swatch | Styled Components | Bootstrap | Sematic UI | Material UI |
 | :----- | :----- | :---- | :----- | :----- | :----- |
-| Colors Variables in compiled output | <span class='x-green c-x'><strong>CSS4 Variables</strong></span> | <span class='x-warning c-x'>CSS-in JS only</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-warning c-x'>CSS-in-JS only</span> |
+| Colors Variables in compiled output | <span class='x-green c-x'><strong>CSS Variables</strong></span> | <span class='x-warning c-x'>CSS-in JS only</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-red c-x'>Hard Coded</span> | <span class='x-warning c-x'>CSS-in-JS only</span> |
 | CSS Code efficiency to theme components | <span class='x-green c-x'><strong>Linear (CSS Only)</strong></span> | <span class='x-warning c-x'>Linear (using JS variables)</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-red c-x'>Exponential</span> | <span class='x-warning c-x'>Linear (using JS variables)</span> |
 | Can be used without Javascript ? | <span class='x-green c-x'><strong>Yes</strong></span> | <span class='x-red c-x'>No</span> | <span class='x-green c-x'><strong>Yes</strong></span> |<span class='x-green c-x'><strong>Yes</strong></span> |<span class='x-red c-x'>No</span> |
 | Painless dark theme | <span class='x-green c-x'><strong>Yes</strong></span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> | <span class='x-red c-x'>❌</span> |
@@ -41,13 +41,13 @@ The Swatch CSS library is designed for **developers who have medium to advanced 
 + ✅ You have felt the need for a simple, code-efficient way to apply coloring to your components and pages, whether they are web-components, React components, or simple html pages.
 + ✅ You have failed to find extensible, satisfactory solutions in the mainstream existing libraries.
 + ✅ You have a bit of experience in object-oriented programming so the _Swatch way of doing things_ will feel more natural to you.
-+ ✅ You are interested in cutting-edge web design and you have already been looking at CSS4 variables as way to make your stylesheets more efficient.
++ ✅ You are interested in cutting-edge web design and you have already been looking at CSS variables as way to make your stylesheets more efficient.
 + ✅ You target code savings in CSS as a way to improve maintainability of stylesheets.
 
 **Do not use this library if :**
 + ❌ If you are a beginner front-end developper, this library might seem a complex way to solve a simple problem (coloring). There are easier, altough much less code-efficient, solutions to this problem we recommend you to consider.
 + ❌ If you are using Bootstrap or Semantic-UI, these libraries already provide a hard-coded set of colors which is unfortunately incompatible with Swatch unless you wish to compile your own version of those libraries.
-+ ❌ If you are using CSS-in-JS (namely styled-components), you proabably have little use for CSS4 variables ([and have little respect for DOM specs anyway :) ](https://gomakethings.com/whats-wrong-with-css-in-js/)). Bear in mind the 'C' in 'CSS' means 'Cascading' and CSS-in-JS patterns are oblivious to this feature of the language.
++ ❌ If you are using CSS-in-JS (namely styled-components), you proabably have little use for CSS variables ([and have little respect for DOM specs anyway :) ](https://gomakethings.com/whats-wrong-with-css-in-js/)). Bear in mind the 'C' in 'CSS' means 'Cascading' and CSS-in-JS patterns are oblivious to this feature of the language.
 
 
 :::note
@@ -63,8 +63,8 @@ You are probably thinking : _Since CSS is not an object-oriented language, how c
 
 Swatch relies on an interpretation of the Setter/Getter pattern applied to the DOM:
 + The objects are the DOM nodes
-+ The setters are helper CSS classes that set CSS4 variables to the scope of a DOM node
-+ The getters are CSS classes that take scope CSS4 variables to apply them as a CSS property to a DOM node in the scope. 
++ The setters are helper CSS classes that set CSS variables to the scope of a DOM node
++ The getters are CSS classes that take scope CSS variables to apply them as a CSS property to a DOM node in the scope. 
 
 The aim of these docs is to explain in detail how this pattern can be used extremely efficiently to solve your coloring needs, so don't worry if you think this explanation is not enough at the moment. We will cover it in detail in the [Guides](./guides-setters-getters) section of the docs.
 

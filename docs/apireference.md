@@ -4,8 +4,8 @@ title: API Reference
 ---
 
 :::note
-Before starting, please note that (as per [the W3C spec](https://www.w3.org/TR/css-variables-1/)), the scope of a CSS4 variable is as follows :
-+ A CSS4 variable defined on a DOM node applies to this DOM node...
+Before starting, please note that (as per [the W3C spec](https://www.w3.org/TR/css-variables-1/)), the scope of a CSS variable is as follows :
++ A CSS variable defined on a DOM node applies to this DOM node...
 + ... as well as all of its children tree
 + ... as well as all the [Shadow DOM](ihttps://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) trees in the children tree
 :::
@@ -87,7 +87,7 @@ UI colors are meant to be used by the User Interface or your page or application
 
 ## Getters
 
-Getters are CSS classes that take a locally-set CSS4 variable and apply it as a particular property (or set of properties) to a DOM node.
+Getters are CSS classes that take a locally-set CSS variable and apply it as a particular property (or set of properties) to a DOM node.
 
 ### Getters 
 

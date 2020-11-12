@@ -7,7 +7,7 @@ Now, you know how to use setters and getters to apply colors to your html blocks
 
 ## How are themes represented in Swatch ?
 
-**<ins>In Swatch, a theme is an ensemble of CSS4 variables. </ins>**
+**<ins>In Swatch, a theme is an ensemble of CSS variables. </ins>**
 
 There are two themes provided by default : `light` and `dark`.
 

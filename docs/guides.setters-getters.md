@@ -172,9 +172,9 @@ $red:#DF1F00!default; /* Red */
 
 ### Introducing CSS Variables. Easier to debug/maintain but doesn't solve the problem.
 
-CSS4 introduced CSS variables, which are at the time of writing (November 2020), are [supported by 95%](https://caniuse.com/css-variables) of browsers. (If you are coding for ~~IE6~~ IE11, you are probably not looking to use cutting-edge features anyway.)
+CSS introduced CSS variables, which are at the time of writing (November 2020), are [supported by 95%](https://caniuse.com/css-variables) of browsers. (If you are coding for ~~IE6~~ IE11, you are probably not looking to use cutting-edge features anyway.)
 
-With CSS4 variables, we would write the following code to achieve the same functionality.
+With CSS variables, we would write the following code to achieve the same functionality.
 
 <Tabs
   className="unique-tabs"
@@ -228,7 +228,7 @@ In the CSS inspector of your browser, you can see the variables available in the
 :::
 
 To wrap it up, we've seen through the previous examples that the two main issues of doing coloring and theming in CSS are:
-+ Managing colors, which can be improved through the use of variables (preprocessor, or more modern native CSS4)
++ Managing colors, which can be improved through the use of variables (preprocessor, or more modern native CSS)
 + Managing the problem of having 'exponential classes', that is to say one class x Color x Component.This problem translates into _lot_ of code to write, to maintain, and make our end-users request...
 
 **Now you probably see where this is going : we will solve the problem of having exponential classes ...**
@@ -282,12 +282,12 @@ Take a look at the following code :
   </TabItem>
 </Tabs>
 
-Here, we are also using the CSS4 variables, altough in a more efficient way. 
+Here, we are also using the CSS variables, altough in a more efficient way. 
 
 
 **Concretely, we are doing the following**
-1. **Defining CSS4 variables at the [root level](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)**
-2. **Defining CSS helper classes that set a special variable called `current-color` to the previously defined CSS4 variables**
+1. **Defining CSS variables at the [root level](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)**
+2. **Defining CSS helper classes that set a special variable called `current-color` to the previously defined CSS variables**
 3. **Defining CSS classes that 'consume' the `current-color` variable and apply it to the element.**
 
 <ins>
@@ -351,6 +351,6 @@ If we want to pursue the comparison with the Setter and Getter pattern in OOP :
 + The getters read the variables in the scope and apply it as styles to the same or a children node.
 
 :::tip
-CSS4 variables have the 'power' of being inherited by the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). This means you can easily use CSS4 variables (and the Swatch library), to theme subdocuments included through the [&lt;use&gt; tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This feature allows you to style, for instance, svg sprites. [Read more about this here](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) (the part about CSS4 variables is located at the end of the article).
+CSS variables have the 'power' of being inherited by the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). This means you can easily use CSS variables (and the Swatch library), to theme subdocuments included through the [&lt;use&gt; tag](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use). This feature allows you to style, for instance, svg sprites. [Read more about this here](https://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/) (the part about CSS variables is located at the end of the article).
 :::
 

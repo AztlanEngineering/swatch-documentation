@@ -51,7 +51,7 @@ For instance, `b-y`, `c-x`, `b-light-y`, `c-dark-x`, `c-on-x` are valid getters.
 Shall this remain a bit obscure to you, the following examples will dispell any doubt you might have.
 
 :::note
-CSS4 variables are unherited through the DOM (And the Shadow DOM). This means, you can _set_ a variable on a parent element and _get_ it on a children element.
+CSS variables are unherited through the DOM (And the Shadow DOM). This means, you can _set_ a variable on a parent element and _get_ it on a children element.
 :::
 
 ## Examples

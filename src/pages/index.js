@@ -13,12 +13,12 @@ const features = [
     imageUrl   :'img/color-palette.png',
     description:(
       <>
-        Swatch provides you with more than 20 CSS4 color swatches to theme your components and apps. Each Swatch is composed by a main color, a lighter shade, a darker shade, and a contrast color for text. This mean more than 80 different colors at your disposal.
+        Swatch provides you with more than 20 CSS color swatches to theme your components and apps. Each Swatch is composed by a main color, a lighter shade, a darker shade, and a contrast color for text. This mean more than 80 different colors at your disposal.
       </>
     ),
   },
   {
-    title      :<>A modern pattern using CSS4 variables</>,
+    title      :<>A modern pattern using CSS variables</>,
     imageUrl   :'img/project.png',
     description:(
       <>
@@ -88,8 +88,8 @@ function Home() {
   const {siteConfig = {}} = context
   return (
     <Layout
-      title={`A code-efficient CSS4 Theming and Coloring Library`}
-      description="Swatch is a lightweight, code efficient theming and coloring CSS library based on CSS4 variables and the Setter/Getter pattern."
+      title={`A code-efficient CSS Theming and Coloring Library`}
+      description="Swatch is a lightweight, code efficient theming and coloring CSS library based on CSS variables and the Setter/Getter pattern."
     >
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
