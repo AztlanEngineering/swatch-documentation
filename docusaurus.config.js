@@ -1,6 +1,6 @@
 module.exports = {
   title           :'Swatch',
-  tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS4 vars and the Setter/Getter pattern.',
+  tagline         :'A powerful, lightweight (S)CSS coloring and theming library based on CSS vars and the Setter/Getter pattern.',
   url             :'https://swatch.dev',
   baseUrl         :'/',
   favicon         :'img/favicon.png',
